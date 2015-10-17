@@ -119,7 +119,7 @@ You should get back an image that looks like the following:
 
 ![image](canonical.png =600x)
 
-https://github.com/MooersLab/PymoMooersLab/roundview/cononical.png
+https://github.com/MooersLab/MooersLab/roundview/cononical.png
 
 
 
