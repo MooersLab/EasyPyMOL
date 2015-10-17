@@ -117,9 +117,9 @@ To apply the canonical view similar to that in Gassner et al. 2004, copy and pas
 You should get back an image that looks like the following:
 
 
-![image](canonical.png =600x)
 
-https://github.com/MooersLab/MooersLab/roundview/cononical.png
+<img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="90%"></img> 
+
 
 
 
