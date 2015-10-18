@@ -56,7 +56,8 @@ How to install
 
 Get the script. Either download the folder from [this link](https://github.com/MooersLab/PymoMooersLab/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
 
-	git clone https://github.com/MooersLab/MooersLabPymol/roundview
+	git clone https://github.com/MooersLab/EasyPyMOL.git
+	
 
 You need the program <code>git</code> installed on your computer. Git is avialbe via macports on a mac or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
