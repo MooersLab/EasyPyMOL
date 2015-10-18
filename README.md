@@ -25,7 +25,7 @@ roundview.py
 ##Solution: roundview()##
 
 	PyMOL>roundview  
-								  set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.66,42.4,56.26,66.53,-20.0);
+	set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.66,42.4,56.26,66.53,-20.0);
 
     
 #### Paste above reformated set_view() command onto the PyMOL command line in the external gui or into a script. ####
