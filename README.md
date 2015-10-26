@@ -1,4 +1,4 @@
-# EasyPyMOL
+# PyMOL made easier with horizontal scripting
 Script to facilitate the making of horizontal scripts
 
 -----------------------
@@ -137,7 +137,7 @@ appended with each execution of the roundview command.
 --------------
 License
 ---------
-MIT License
+GNU General Public License GPL-3
 
 --------------
 Reference
