@@ -1,10 +1,16 @@
 # PyMOL made easier with horizontal scripting
-Script to facilitate the making of horizontal scripts
+*Script to facilitate the making of horizontal scripts*
 
------------------------
-roundview.py    
------------------------
-(C) Blaine Mooers,Ph.D.,  Universitry of Oklahoma Health Sciences Center, 2015-2016
+Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in
+[Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*in submission*).
+Easier use of PyMOL with horizontal scripts. *{Enter Journal Name}*.
+
+<img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" alt="Figure1" width="30%"/>
+
+
+## `roundview.py`
+
+(C) [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2016
 
 ##Problem: viewing port matrix from get_view() in PyMOL is too hard to copy and paste quickly onto one line with other commands during horizontal scripting##
 
