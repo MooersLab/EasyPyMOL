@@ -2,8 +2,8 @@
 *Script to facilitate the making of horizontal scripts*
 
 Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in the manuscript:
-[Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*in submission*).
-Easier use of PyMOL with horizontal scripts. *{Enter Journal Name}*.
+[Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*submitted*).
+Easier use of PyMOL with horizontal scripts. *{PLoS One}*.
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" alt="Figure1" width="30%"/>
 
@@ -112,7 +112,7 @@ Open up pymol. Copy and paste the entire line below onto the command line in the
 fetch 3fa0,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_color white; show cartoon;color red, ss h;color yellow, ss s;color green, ss l+'';roundview  
 ```
   
-To apply the canonical view similar to that in Gassner et al. 2004, copy and paste the following onto the command line:
+To apply the canonical view similar to that in [Gassner et al. 2004](http://www.ncbi.nlm.nih.gov/pubmed/12646375), copy and paste the following onto the command line:
   
 ```py
 set_view (-0.18,-0.69,-0.7,0.98,-0.17,-0.09,-0.06,-0.7,0.71,0.0,0.0,-154.87,34.77,11.27,9.52,121.27,188.47,-20.0); ray 1500,1600; png coanonical.png
