@@ -47,8 +47,10 @@ require any external modules. Tested on:
 * Windows 8 32 bit  running PyMOL 1.7.6.2 and PyMOL 1.7.6.6. 
 * Mac OSX 10.10.5 64 bit running PyMOL 1.5.0.5 and 1.7.6.6. 
 
-How to install
+Instructions
 --------------------------------------------------------------------------------
+
+##### How to install
 
 Get the script. Either download the folder from [this link](https://github.com/MooersLab/PymoMooersLab/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
 
@@ -79,16 +81,16 @@ There are at least four ways of loading the script into PyMOL:
     run /Path/To/roundview.py
     ```
 
-How to run
---------------------------------------------------------------------------------
+##### How to run
+
 After loading a pdb file and setting up the molecular scene, type on one of the command lines in PyMOL:
 
 ```py
 PyMOL>roundview
 ```
 
-How to get help
---------------------------------------------------------------------------------
+##### How to get help
+
 Type the following on ona of the command lines in PyMOL
 
 ```py
@@ -128,11 +130,11 @@ PyMOL>roundview 0,1,firstscene.txt
 
 Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.txt" should be listed. The default filename is "roundedview.txt". These file is appended with each execution of the roundview command.
 
-Reference
+Reference, License, and Copyright
 --------------------------------------------------------------------------------
 
 Mooers, B. H. M. (submitted) Easier use of PyMOL with horizontal scripts.
 
-GNU General Public License GPL-3
+GNU General Public License ([GPL-3](http://www.gnu.org/licenses/gpl-3.0.en.html))
 
 (C) [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2016
