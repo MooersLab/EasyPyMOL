@@ -112,7 +112,7 @@ Open up pymol. Copy and paste the entire line below onto the command line in the
 fetch 3fa0,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_color white; show cartoon;color red, ss h;color yellow, ss s;color green, ss l+'';roundview  
 ```
   
-To apply the canonical view similar to that in [Gassner et al. 2004](http://www.ncbi.nlm.nih.gov/pubmed/12646375), copy and paste the following onto the command line:
+To apply the canonical view similar to that in [Gassner et al. 2003](http://www.ncbi.nlm.nih.gov/pubmed/12646375), copy and paste the following onto the command line:
   
 ```py
 set_view (-0.18,-0.69,-0.7,0.98,-0.17,-0.09,-0.06,-0.7,0.71,0.0,0.0,-154.87,34.77,11.27,9.52,121.27,188.47,-20.0); ray 1500,1600; png coanonical.png
