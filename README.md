@@ -14,7 +14,7 @@ Easier use of PyMOL with horizontal scripts. *{Enter Journal Name}*.
 PyMOL>get_view  
 
 ### cut below here and paste into script ###  
-set_view (\
+set_view(\
   -0.832868993,    0.398498207,    0.383896619,\  
   -0.260102808,   -0.894237876,    0.363985002,\  
    0.488390923,    0.203309149,    0.848513067,\  
@@ -23,7 +23,6 @@ set_view (\
   56.260883331,   66.533096313,  -20.000000000 )  
 ### cut above here and paste into script ###
 ```
-    
 
 ## *Solution*: The function `roundview()` in [`roundview.py`](.\roundview.py)
 
@@ -32,7 +31,7 @@ PyMOL>roundview
 set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.66,42.4,56.26,66.53,-20.0);
 ```
     
-Paste above reformated set_view() command onto the PyMOL command line in the external gui or into a script.
+Paste above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts).
 
 What this is
 --------------------------------------------------------------------------------
@@ -57,7 +56,7 @@ Get the script. Either download the folder from [this link](https://github.com/M
 git clone https://github.com/MooersLab/EasyPyMOL.git
 ```
 
-You need the program <code>git</code> installed on your computer. Git is available via macports on a mac or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+You need the program [Git](https://git-scm.com/) installed on your computer. Git is available via macports on a mac or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
 There are at least four ways of loading the script into PyMOL:
@@ -96,7 +95,11 @@ Type the following on ona of the command lines in PyMOL
 PyMOL> help roundview
 ```
 
-Usage: roundview [view, significant digits, outname] # the values in the [] are optional.  The default view is "0". The default number of significant digits is 2. The "outname" is the name of a plain text file to which the output of roundveiw() is written.
+Usage: `roundview [view, significant digits, outname]` 
+* The values in the [ ] are optional.  
+* The default view is "0". 
+* The default number of `significant digits` is 2. 
+* The `outname` is the name of a plain text file to which the output of `roundveiw()` is written.
 
 Quick test with wildtype bacteriophage T4 lysozyme, 3fa0
 --------------------------------------------------------------------------------
