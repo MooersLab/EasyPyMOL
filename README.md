@@ -3,7 +3,7 @@
 
 Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in the manuscript:
 [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*submitted*).
-Easier use of PyMOL with horizontal scripts. *PLOS ONE*.
+Easier use of PyMOL with horizontal scripts. 
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" alt="Figure1" width="30%"/>
 
