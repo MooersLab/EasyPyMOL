@@ -49,8 +49,31 @@ require any external modules. Tested on:
 
 Instructions
 --------------------------------------------------------------------------------
+#### Quick start instructions for PyMOL beginners
 
-##### How to install
+Copy script from this link [this link](https://github.com/MooersLab/EasyPyMOL/roundview.py) after changing view to "RAW"
+and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to home directory. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
+
+```shell
+ls *.py
+```
+Paste the following horizontal script on the command line of the top or external gui:
+```shell
+fetch 1lw9, async=0; run roundview.py; roundview 0,1
+```
+You should see the following in the command history window of the top gui:
+```shell
+set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-155.2,35.1,11.5,9.7,122.3,188.0,-20.0);
+```
+
+Type the following to see the default format from get_view.
+```shell
+get_view
+```
+
+Which looks easier to add to a horizontal scrpt with other commands on the same line?
+
+##### More advanced ways to install 
 
 Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
 
@@ -61,7 +84,7 @@ git clone https://github.com/MooersLab/EasyPyMOL.git
 You need the program [Git](https://git-scm.com/) installed on your computer. Git is available via macports on a mac or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
-There are at least four ways of loading the script into PyMOL:
+There are at least different four ways of loading the script into PyMOL:
 
 1. move [`roundview.py`](./roundview.py) to the working directory of pymol. In pymol, type 
 
