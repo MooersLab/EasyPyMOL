@@ -51,7 +51,7 @@ Instructions
 --------------------------------------------------------------------------------
 #### Quick start instructions for PyMOL beginners
 
-Copy script from this link [this link](https://github.com/MooersLab/EasyPyMOL/roundview.py) after changing view to "RAW"
+Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after changing view to "RAW"
 and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to home directory. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
 
 ```shell
