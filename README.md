@@ -50,7 +50,7 @@ Tested on:
 
 Instructions
 --------------------------------------------------------------------------------
-#### Quick start instructions for PyMOL beginners
+#### Quick start instructions for GitHub beginning users
 
 Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/<username> or /home/<username> or C:\Users\<username>. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
 
@@ -73,7 +73,7 @@ get_view
 
 Which looks easier to add to a horizontal scrpt with other commands on the same line?
 
-##### More advanced ways to install 
+#### More advanced ways to install 
 
 Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
 
@@ -120,10 +120,10 @@ Type the following on ona of the command lines in PyMOL
 PyMOL> help roundview
 ```
 
-Usage: `roundview [view, significant digits, outname]` 
+Usage: `roundview [view, decimal places, outname]` 
 * The values in the [ ] are optional.  
 * The default view is "0". 
-* The default number of `significant digits` is 2. 
+* The default number of `decimal places` is 2. 
 * The `outname` is the name of a plain text file to which the output of `roundveiw()` is written.
 
 Quick test with wildtype bacteriophage T4 lysozyme, 3fa0
