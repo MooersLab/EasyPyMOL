@@ -52,7 +52,7 @@ Instructions
 
 ##### How to install
 
-Get the script. Either download the folder from [this link](https://github.com/MooersLab/PymoMooersLab/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
+Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
 
 ```shell
 git clone https://github.com/MooersLab/EasyPyMOL.git
