@@ -20,7 +20,7 @@ history window in the external gui. A semicolon with nothing
 to the right of it at the end of a line of grouped commands
 is harmless.
 
-Usage: roundview [view, fractional_digits, outname] 
+Usage: roundview [view, decimal_places, outname] 
 
     Note that the values in the [] are optional.
 
@@ -120,7 +120,7 @@ version 1.1         23 November 2015
  
 __version__ = 1.1
 
-def roundview(StoredView=0, fractional_digits=2, outname="roundedview.txt"):
+def roundview(StoredView=0, decimal_places=2, outname="roundedview.txt"):
     
     
     """The function roundview()."""
@@ -128,7 +128,7 @@ def roundview(StoredView=0, fractional_digits=2, outname="roundedview.txt"):
     #convert the commandline arguments from strings to integers
 
     StoredView = int(StoredView)
-    fractional_digits = int(fractional_digits)
+    decimal_places = int(decimal_places)
     
     
     #call the get_viewd function
@@ -143,11 +143,11 @@ def roundview(StoredView=0, fractional_digits=2, outname="roundedview.txt"):
         m[15], m[16], m[17]]
 
 
-    #Round off the matrix elements to two fracitional places
+    #Round off the matrix elements to two decimal places (two fractional places)
     #This rounding approach solved the problem of unwanted
     #whitespaces when I tried using a string format statement
 
-    myRoundedList = [ round(elem, fractional_digits) for elem in myList]
+    myRoundedList = [ round(elem, decimal_places) for elem in myList]
     
     
     #x is the format of the output. The whitespace is required
