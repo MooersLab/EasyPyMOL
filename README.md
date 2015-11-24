@@ -42,7 +42,8 @@ Requirements
 --------------------------------------------------------------------------------
 
 Requires a molecular object loaded into an interactive session of PyMOL. Does not
-require any external modules. Tested on:
+require any  modules outside of two in PyMOL. Should work on all versions of PyMOL. 
+Tested on:
 * Ubuntu 14.04 64 bit with PyMOL 1.7.2.2. 
 * Windows 8 32 bit  running PyMOL 1.7.6.2 and PyMOL 1.7.6.6. 
 * Mac OSX 10.10.5 64 bit running PyMOL 1.5.0.5 and 1.7.6.6. 
@@ -51,8 +52,7 @@ Instructions
 --------------------------------------------------------------------------------
 #### Quick start instructions for PyMOL beginners
 
-Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after changing view to "RAW"
-and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to home directory. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
+Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/<username> or /home/<username> or C:\Users\<username>. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
 
 ```shell
 ls *.py
