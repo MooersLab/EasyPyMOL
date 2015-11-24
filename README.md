@@ -151,7 +151,7 @@ To test some other argument values, copy paste the following command.
 PyMOL>roundview 0,1,firstscene.txt
 ```
 
-Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.txt" should be listed. The default filename is "roundedview.txt". These file is appended with each execution of the roundview command.
+Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.txt" should be listed. The default filename is "roundedview.txt". This file is appended with each execution of the roundview command. You may find it easier to copy the set_view line from this text file than from the command history window in PyMOL.
 
 Reference, License, and Copyright
 --------------------------------------------------------------------------------
