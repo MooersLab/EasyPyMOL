@@ -120,9 +120,9 @@ Restart pymol. You should see soemthing like the following in the command histor
 
 Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
    ```py
-    import sys
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
     ```
+
 
 ##### How to run
 
