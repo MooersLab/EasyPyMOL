@@ -126,7 +126,6 @@ Type "roundview" on either command line. You should get back something like this
 How to run
 --------------------------------------------------------------------------------
 
-
 After loading a pdb file and setting up the molecular scene, type on one of the command lines in PyMOL:
 
 ```py
