@@ -118,6 +118,15 @@ Restart pymol. You should see soemthing like the following in the command histor
     PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
     ```
 
+Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
+   ```py
+    PyMOL>import sys
+    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+    ```
+
+
+
 Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
    ```py
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
