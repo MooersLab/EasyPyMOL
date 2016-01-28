@@ -123,8 +123,9 @@ Type "roundview" on either command line. You should get back something like this
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
     ```
 
+How to run
+--------------------------------------------------------------------------------
 
-##### How to run
 
 After loading a pdb file and setting up the molecular scene, type on one of the command lines in PyMOL:
 
