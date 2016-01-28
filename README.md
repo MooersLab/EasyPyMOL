@@ -91,18 +91,39 @@ There are at least different four ways of loading the script into PyMOL:
     ```py
     run roundview.py
     ```
+Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview command and the
+on-line documentation are available with 
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
 3. copy [`roundview.py`](./roundview.py) to the following hidden folder `~.pymol/startup` in your home directory or to the startup folder inside your MacPyMOL.app.
 
-4. create or edit the hidden file `.pymolrc` text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup:
+4. create or edit the hidden file `.pymolrc` text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup. This option works with MacPyMOL, in addition to PyMOLX11Hybrid:
 
     ```py
     import sys
     sys.path.append('/Path/To/roundview')
     run /Path/To/roundview.py
     ```
+For example:
+   ```py
+    import sys
+    sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+    run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+    ```
+Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
+   ```py
+    PyMOL>import sys
+    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+    ```
+
+Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
+   ```py
+    import sys
+    set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
+    ```
+
 
 ##### How to run
 
