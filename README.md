@@ -122,6 +122,11 @@ Type "roundview" on either command line. You should get back something like this
    ```py
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
     ```
+   ```py
+    PyMOL>import sys
+    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+    ```
 
 How to run
 --------------------------------------------------------------------------------
