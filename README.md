@@ -113,14 +113,8 @@ on-line documentation are available with
     sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
     run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
     ```
-   Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
-    ```py
-    PyMOL>import sys
-    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
-    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-    ```
 
-    Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
+    Restart pymol. You should see something like the following in the command history window if your path to the script is correct. 
     ```py
     PyMOL>import sys
     PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
