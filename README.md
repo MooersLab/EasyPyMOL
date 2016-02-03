@@ -57,10 +57,12 @@ Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/
 ```shell
 ls *.py
 ```
+
 Paste the following horizontal script on the command line of the top or external gui:
 ```shell
 fetch 1lw9, async=0; run roundview.py; roundview 0,1
 ```
+
 You should see the following in the command history window of the top gui:
 ```shell
 set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-155.2,35.1,11.5,9.7,122.3,188.0,-20.0);
@@ -71,7 +73,7 @@ Type the following to see the default format from get_view.
 get_view
 ```
 
-Which looks easier to add to a horizontal scrpt with other commands on the same line?
+Which looks easier to add to a horizontal script with other commands on the same line?
 
 #### More advanced ways to install 
 
@@ -105,33 +107,26 @@ on-line documentation are available with
     sys.path.append('/Path/To/roundview')
     run /Path/To/roundview.py
     ```
-For example:
-   ```py
+   For example:
+    ```py
     import sys
     sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
     run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
     ```
-Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
-   ```py
+
+    Restart pymol. You should see something like the following in the command history window if your path to the script is correct. 
+    ```py
     PyMOL>import sys
     PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
     PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
     ```
-
-Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
-   ```py
-    PyMOL>import sys
-    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
-    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-    ```
-
-
-
-Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
-   ```py
+    
+    Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
+    ```py
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
     ```
-   ```py
+    
+    ```py
     PyMOL>import sys
     PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
     PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
