@@ -96,36 +96,27 @@ on-line documentation are available with
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
-3. copy [`roundview.py`](./roundview.py) to the following hidden folder `~.pymol/startup` in your home directory or to the startup folder inside your MacPyMOL.app.
+3. copy [`roundview.py`](./roundview.py) to safe folder that will not be deleted when you delete PyMOL by accident or out of frustration. I use `~/Scripts/PyMOLScripts/`. Then load into PyMOL using method 1 or 2. 
 
-4. create or edit the hidden file `.pymolrc` text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup. This option works with MacPyMOL, in addition to PyMOLX11Hybrid:
+4. create or edit the hidden file `.pymolrc` text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup. This option also works without the first two lines. 
 
-    ```py
-    import sys
-    sys.path.append('/Path/To/roundview')
-    run /Path/To/roundview.py
-    ```
+  ```py
+  import sys
+  sys.path.append('/Path/To/roundview')
+  run /Path/To/roundview.py
+  ```
 For example:
    ```py
     import sys
-    sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+    sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
     run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
     ```
-Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
-   ```py
-    PyMOL>import sys
-    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
-    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-    ```
-
-Restart pymol. You should see soemthing like the following in the command history window if your path to the script is correct. 
-   ```py
-    PyMOL>import sys
-    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
-    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-    ```
-
-
+Restart pymol. You should see something like the following in the command history window if your path to the script is correct. 
+```py
+PyMOL>import sys
+PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
+PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+```
 
 Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
    ```py
