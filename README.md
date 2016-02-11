@@ -137,22 +137,22 @@ Type "roundview" on either command line. You should get back something like this
     PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
     ```
 
-How to run
+#### How to run
 --------------------------------------------------------------------------------
 
 After loading a pdb file and setting up the molecular scene, type on one of the command lines in PyMOL:
 
-```py
-PyMOL>roundview
-```
+    ```py
+    PyMOL>roundview
+    ```
 
 ##### How to get help
 
 Type the following on ona of the command lines in PyMOL
 
-```py
-PyMOL> help roundview
-```
+    ```py
+    PyMOL> help roundview
+    ```
 
 Usage: `roundview [view, decimal places, outname]` 
 * The values in the [ ] are optional.  
@@ -166,7 +166,7 @@ Quick test with wildtype bacteriophage T4 lysozyme, 3fa0
 Open up pymol. Copy and paste the entire line below onto the command line in the external gui (the on above the GL viewing port). This is an example of a horizontal script. By hitting the up arrow key, you can recall this command for editing on the command line. This code block is  more agile to edit than opening, editing, saving, and loading an external script file.
 
 ```py
-fetch 3fa0,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_color white; show cartoon;color red, ss h;color yellow, ss s;color green, ss l+'';roundview  
+fetch 3fa0,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_color white; show cartoon;color red, ss H;color yellow, ss S;color green, ss L+'';roundview  
 ```
   
 To apply the canonical view similar to that in [Gassner et al. 2003](http://www.ncbi.nlm.nih.gov/pubmed/12646375), copy and paste the following onto the command line:
