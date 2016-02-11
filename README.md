@@ -133,17 +133,17 @@ Type "roundview" on either command line. You should get back something like this
 
 After loading a pdb file and setting up the molecular scene, type on one of the command lines in PyMOL:
 
-    ```py
+   ```py
     PyMOL>roundview
-    ```
+   ```
 
 ##### How to get help
 
 Type the following on one of the command lines in PyMOL
 
-    ```py
+   ```py
     PyMOL> help roundview
-    ```
+   ```
 
 Usage: `roundview [view, decimal places, outname]` 
 * The values in the [ ] are optional.  
