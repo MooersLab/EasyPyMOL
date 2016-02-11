@@ -119,14 +119,14 @@ Restart pymol. You should see something like the following in the command histor
   ```
 
 Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
-   ```py
-    set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
-    ```
-   ```py
-    PyMOL>import sys
-    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
-    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-    ```
+  ```py
+  set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
+  ```
+  ```py
+  PyMOL>import sys
+  PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+  PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+  ```
 
 #### How to run
 --------------------------------------------------------------------------------
@@ -139,7 +139,7 @@ After loading a pdb file and setting up the molecular scene, type on one of the 
 
 ##### How to get help
 
-Type the following on ona of the command lines in PyMOL
+Type the following on one of the command lines in PyMOL
 
     ```py
     PyMOL> help roundview
