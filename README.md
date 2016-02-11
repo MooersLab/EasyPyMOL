@@ -88,9 +88,9 @@ There are at least different four ways of loading the script into PyMOL:
 
 1. move [`roundview.py`](./roundview.py) to the working directory of pymol. In pymol, type 
 
-    ```py
+   ```py
     run roundview.py
-    ```
+   ```
 Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview command and the
 on-line documentation are available with 
 
@@ -99,34 +99,34 @@ on-line documentation are available with
 3. copy [`roundview.py`](./roundview.py) to safe folder that will not be deleted when you delete PyMOL by accident or out of frustration. I use `~/Scripts/PyMOLScripts/`. Then load into PyMOL using method 1 or 2. 
 
 4. create or edit the hidden file `.pymolrc` text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup. This option also works without the first two lines. 
-
-  ```py
-  import sys
-  sys.path.append('/Path/To/roundview')
-  run /Path/To/roundview.py
-  ```
+  
+   ```py
+    import sys
+    sys.path.append('/Path/To/roundview')
+    run /Path/To/roundview.py
+   ```
 For example:
    ```py
     import sys
     sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
     run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-    ```
+   ```
 Restart pymol. You should see something like the following in the command history window if your path to the script is correct. 
-  ```py
-  PyMOL>import sys
-  PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
-  PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-  ```
+   ```py
+    PyMOL>import sys
+    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
+    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+   ```
 
 Type "roundview" on either command line. You should get back something like this if no molecule is loaded:
-  ```py
-  set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
-  ```
-  ```py
-  PyMOL>import sys
-  PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
-  PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
-  ```
+   ```py
+    set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
+   ```
+   ```py
+    PyMOL>import sys
+    PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/Scripts_PyMOL/')
+    PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
+   ```
 
 #### How to run
 --------------------------------------------------------------------------------
