@@ -170,7 +170,7 @@ You should get back an image that looks like the following:
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="90%"></img> 
 
-To test some other argument values, copy paste the following command. 
+To test some other argument values, copy and paste the following command into PyMOL. 
 
 ```py
 PyMOL>roundview 0,1,firstscene.txt
