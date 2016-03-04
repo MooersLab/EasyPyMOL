@@ -52,7 +52,7 @@ Instructions
 --------------------------------------------------------------------------------
 #### Quick start instructions for GitHub beginning users
 
-Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/<username> or /home/<username> or C:\Users\<username>. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
+Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/<username> or /home/ <username> or C:\Users\ <username>. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
 
 ```shell
 ls *.py
@@ -96,7 +96,7 @@ on-line documentation are available with
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
-3. copy [`roundview.py`](./roundview.py) to safe folder that will not be deleted when you delete PyMOL by accident or out of frustration. I use `~/Scripts/PyMOLScripts/`. Then load into PyMOL using method 1 or 2. 
+3. copy [`roundview.py`](./roundview.py) to safe folder that will not be deleted when you delete PyMOL. I use `~/Scripts/PyMOLScripts/`. Then load into PyMOL using method 1 or 2. 
 
 4. create or edit the hidden file `.pymolrc` text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup. This option also works without the first two lines. 
   
