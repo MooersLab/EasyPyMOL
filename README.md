@@ -308,12 +308,13 @@ USAGE
 
 #### Demo2: 
 
-type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following:
+type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following. These black and white
+figures are useful when color figures are not needed:
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/13590390/201de41c-e4a5-11e5-9835-7aced7982306.png" width="90%"></img>
 
 
-
+#### Demo3: 
 
 
 Reference, License, and Copyright
