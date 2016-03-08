@@ -182,66 +182,69 @@ Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.
 
 ### Exam2function.py
 
-    Defines aliases q1-q8 for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems course. Each alias is 
-    is mapped to a number of commands.  
-    
-    Create ~/Scripts/PyMOLScripts and store the script in this subfolder or store in some other folder of your choosing,
-    if you know what you are doing. 
-    
-    Enter on the command line in PyMOL the following command:
-    
-    run ~/Scripts/PyMOLScripts/exam2.py
-    
-    Now the aliases q1,q2, ..., q8 are active.
-    
-    Type 'q1' to execute the alias.
-    
-    Type help q1 to print the documentation to the PyMOL 
-    command history window. 
-    
-    Tested on PyMOL versions 1.5.0.5 AND 1.8.0.5. 
+  Defines aliases q1-q8 for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems course. Each alias is 
+  is mapped to a number of commands.  
+  
+  Create ~/Scripts/PyMOLScripts and store the script in this subfolder or store in some other folder of your choosing,
+  if you know what you are doing. 
+  
+  Enter on the command line in PyMOL the following command:
+ 
+```py  
+run ~/Scripts/PyMOLScripts/exam2.py
+```
+
+  Now the aliases q1,q2, ..., q8 are active.
+  
+  Type 'q1' to execute the alias.
+  
+  Type help q1 to print the documentation to the PyMOL 
+  command history window. 
+  
+  Tested on PyMOL versions 1.5.0.5 AND 1.8.0.5. 
 
 
 ### StartupAliases.py
 
-    Copy to ~/Scripts/PyMOLScripts/.
-    Add this command on one line in your .pymolrc file (pymolrc.pml on Windows):
-    
-    run ~/Scripts/PyMOLScripts/StartUpAliases.py
+  Copy to ~/Scripts/PyMOLScripts/.
+  Add this command on one line in your .pymolrc file (pymolrc.pml on Windows):
 
-    Now these aliases will be available whenever you startup PyMOL.
+```py    
+run ~/Scripts/PyMOLScripts/StartUpAliases.py
+```
+  Now these aliases will be available whenever you startup PyMOL.
 
-    Format of list below:
-    Active alias, description: PDB code, where applicable. 
-    
-    Molecules in standard orientations: 
-    
-    T4L, WT T4 lysozyme (1.09 ang) as a ribbon diagram: 3fa0. 
-    U8, 16-mer dsRNA with 8 contiguous Us. U-helix RaNA (1.37 ang): 3nd3.
-    WC8, 16-mer RNA with all Watson-Crick base pairs (1.67 ang): 3nd4.
-    N9, neuraminidase as cartoon, biological unit (1.55 ang): 4dgr.
-    GGT, gamma glutamyl transpeptidase as cartoon (1.67 ang): 4gdx.
-    GU, 10-mer RNA with eight GU base pairs (1.32 ang): 4pco.
-
-
-    Complex figures to serve as templates: 
-    
-    BST, Base-stacking figure, (1.32 ang): 4pco. 
-    LG, Electron density map of nine sugar glycan,(1.55 ang):, 4dgr. 
-    NA, Sodium cation in major groove of 16-mer RNA: 3nd4.
+  Format of list below:
+  Active alias, description: PDB code, where applicable. 
+  
+  Molecules in standard orientations: 
+  
+  T4L, WT T4 lysozyme (1.09 ang) as a ribbon diagram: 3fa0. 
+  U8, 16-mer dsRNA with 8 contiguous Us. U-helix RaNA (1.37 ang): 3nd3.
+  WC8, 16-mer RNA with all Watson-Crick base pairs (1.67 ang): 3nd4.
+  N9, neuraminidase as cartoon, biological unit (1.55 ang): 4dgr.
+  GGT, gamma glutamyl transpeptidase as cartoon (1.67 ang): 4gdx.
+  GU, 10-mer RNA with eight GU base pairs (1.32 ang): 4pco.
 
 
-    Complex representations applied to any visible molecular object:
-    
-    AO, Make ambient occlusion image. Requires global view of protein.
-    BS, Make fancy ball and stick representation of visible atoms. 
-    BU, Display biological unit. 
-    CB, Define color blind compatible coloring scheme. 
-    BW, Make black and white ribbon cartoon on white background.
-    CSS, Color ribbon and cartoons by secondary structure: red, green and yellow. 
-    CBSS, Color ribbon and cartoons with dcolorblind friendly colors. 
-    CR, Commands to make colored filled-ring cartoon of nucleic acids..
-    FR, Commands to make filled-ring cartoon of nucleic acids.
+  Complex figures to serve as templates: 
+  
+  BST, Base-stacking figure, (1.32 ang): 4pco. 
+  LG, Electron density map of nine sugar glycan,(1.55 ang):, 4dgr. 
+  NA, Sodium cation in major groove of 16-mer RNA: 3nd4.
+
+
+  Complex representations applied to any visible molecular object:
+  
+  AO, Make ambient occlusion image. Requires global view of protein.
+  BS, Make fancy ball and stick representation of visible atoms. 
+  BU, Display biological unit. 
+  CB, Define color blind compatible coloring scheme. 
+  BW, Make black and white ribbon cartoon on white background.
+  CSS, Color ribbon and cartoons by secondary structure: red, green and yellow. 
+  CBSS, Color ribbon and cartoons with dcolorblind friendly colors. 
+  CR, Commands to make colored filled-ring cartoon of nucleic acids..
+  FR, Commands to make filled-ring cartoon of nucleic acids.
 
 #### Demo1: type "T4L" on the command line. Now type "AO". You should get an image like the following:
 
