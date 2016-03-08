@@ -5,10 +5,10 @@ Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches des
 [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*under revision*).
 "Easier use of PyMOL with horizontal scripts". 
 
-Ambient occlusion image made with alias 'AO" | Ribbon diagram made with alias "T4L" 
+Ambient occlusion image made with the alias 'AO" | Ribbon image made with alias "T4L" 
 -------------------------------------------- | --------------------------------------------
-<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="100%"/> | 
-<img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="40%"/>
+<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="50%"/> | 
+<img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="50%"/>
 
 
 
