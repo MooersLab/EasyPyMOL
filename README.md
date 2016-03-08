@@ -127,6 +127,9 @@ Type "roundview" on either command line. You should get back this if no molecule
    ```py
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
    ```
+   
+[Link to installation video for Linux on YouTube](http://youtubevideourl)
+[Link to installation video for Windows on YouTube](http://youtubevideourl)
 
 #### How to run
 --------------------------------------------------------------------------------
