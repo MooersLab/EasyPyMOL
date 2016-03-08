@@ -251,11 +251,15 @@ Alias name, description: PDB code, where applicable.
 * CR, Commands to make colored filled-ring cartoon of nucleic acids..
 * FR, Commands to make filled-ring cartoon of nucleic acids.
 
-#### Demo1: type "T4L" on the command line. Now type "AO". You should get an image like the following:
+#### Demo1: 
+
+type "T4L" on the command line. Now type "AO". You should get an image like the following:
 
 
 
-#### Demo2: type "T4L" on the command line. Now type "BW". You should get an image like the following:
+#### Demo2: 
+
+type "T4L" on the command line. Now type "BW". You should get an image like the following:
 
 
 Reference, License, and Copyright
