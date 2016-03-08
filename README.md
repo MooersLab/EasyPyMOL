@@ -273,9 +273,9 @@ Alias name, description: PDB code, where applicable.
 * CR, Commands to make colored filled-ring cartoon of nucleic acids..
 * FR, Commands to make filled-ring cartoon of nucleic acids.
 
-#### Demo1: 
+#### Demo 1: 
 
-type "T4L" on the command line. Now type "AO". You should get an image like the following:
+Type "T4L" on the command line. Now type "AO". You should get an image like the following:
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="90%"></img>
 
@@ -318,7 +318,7 @@ USAGE
     Commands without linebreaks:
     set_color oxygen, [1.0,0.4,0.4];set_color nitrogen, [0.5,0.5,1.0];remove solvent;as spheres;util.cbaw;bg white;set light_count,10;set spec_count,1;set shininess, 10;set specular,0.25;set ambient,0;set direct,0;set reflect,1.5;set ray_shadow_decay_factor, 0.1;set ray_shadow_decay_range, 2;unset depth_cue;ray 
 
-#### Demo2: 
+#### Demo 2: 
 
 type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following. These black and white
 figures are useful when color figures are not needed:
@@ -326,7 +326,7 @@ figures are useful when color figures are not needed:
 <img src="https://cloud.githubusercontent.com/assets/15176203/13590390/201de41c-e4a5-11e5-9835-7aced7982306.png" width="90%"></img>
 
 
-#### Demo3: 
+#### Demo 3: 
 
 Type 'help NA' to see a very long script mapped to two a letter command.
 
