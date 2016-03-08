@@ -47,7 +47,7 @@ Paste above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) c
 What this is
 --------------------------------------------------------------------------------
 
-The python script roundview.py includes the short function `roundview()` that reformats the viewing port setting matrix from six rows to one row. The more compact format makes it easy to copy and paste onto the command liine. Other commands that are separated by semicolons can be add to the same line with the settings. This defines a horiontal script. The script can include commnents lines that are isolated by semicolons.
+The python script roundview.py includes the short function `roundview()` that reformats the viewing port setting matrix from six rows to one row. The more compact format makes it easy to copy and paste it onto the command liine. Other commands that are separated by semicolons can be added to the same line with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons.
 
 Requirements
 --------------------------------------------------------------------------------
