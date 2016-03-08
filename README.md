@@ -262,7 +262,7 @@ type "T4L" on the command line. Now type "AO". You should get an image like the 
 
 type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following:
 
-<img src="   " width="90%"></img>
+<img src="https://cloud.githubusercontent.com/assets/15176203/13590390/201de41c-e4a5-11e5-9835-7aced7982306.png" width="90%"></img>
 
 
 
