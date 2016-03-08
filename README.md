@@ -9,7 +9,7 @@ Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches des
 17 commands were placed on one line as a horizontal script.
 
 
-<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="60%"/> 
+<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="75%"/> 
 
 ####  Ribbon diagram of the above molecule made with the alias "T4L" 
 Another image made with a horizontal script.
