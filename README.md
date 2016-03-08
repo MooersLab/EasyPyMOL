@@ -268,6 +268,44 @@ type "T4L" on the command line. Now type "AO". You should get an image like the 
 <img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="90%"></img>
 
 
+Type 'help AO' on the command line to see the documentation for the AO alias. It is mapped to 17 commands. 
+
+PyMOL>help AO
+ 
+DESCRIPTION
+    
+    Commands to make ambient occlusion image like those in Qutemole. 
+    
+USAGE
+    Type 'AO' to activate. Type 'help AO' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    set_color oxygen, [1.0,0.4,0.4];
+    set_color nitrogen, [0.5,0.5,1.0];
+    remove solvent;
+    as spheres;
+    util.cbaw;
+    bg white;
+    set light_count,10;
+    set spec_count,1;
+    set shininess, 10;
+    set specular,0.25;
+    set ambient,0;
+    set direct,0;
+    set reflect,1.5;
+    set ray_shadow_decay_factor, 0.1;
+    set ray_shadow_decay_range, 2;
+    unset depth_cue;
+    ray
+    
+    Commands without linebreaks:
+    set_color oxygen, [1.0,0.4,0.4];set_color nitrogen, [0.5,0.5,1.0];remove solvent;as spheres;util.cbaw;bg white;set light_count,10;set spec_count,1;set shininess, 10;set specular,0.25;set ambient,0;set direct,0;set reflect,1.5;set ray_shadow_decay_factor, 0.1;set ray_shadow_decay_range, 2;unset depth_cue;ray 
+
 #### Demo2: 
 
 type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following:
