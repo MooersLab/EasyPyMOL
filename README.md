@@ -214,13 +214,13 @@ run ~/Scripts/PyMOLScripts/StartUpAliases.py
 ```
 Now these aliases will be available whenever you startup PyMOL.
 
-Type the alias name to execute it.
+Type the 'alias name' to execute it.
 
 Type 'help alias name' to see the documentation which includes a list vertical list of the commands mapped to the alias and a horizontal script for easy copying and pasting onto the command line. 
 
 Format of list below:
 
-Active alias, description: PDB code, where applicable. 
+Alias name, description: PDB code, where applicable. 
   
 #### Molecules in standard orientations: 
   
