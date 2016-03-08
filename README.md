@@ -128,8 +128,10 @@ Type "roundview" on either command line. You should get back this if no molecule
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
    ```
    
-[Link to installation video for Linux on YouTube](http://youtubevideourl)
-[Link to installation video for Windows on YouTube](http://youtubevideourl)
+[Link to installation video for Linux and PyMOLHyridX11 for the mac on YouTube](http://youtubevideourl)
+[Link to installation video for MacPyMOL on YouTube](http://www.youtube.com/watch?v=XTwwWgwj4z0)
+
+
 
 #### How to run
 --------------------------------------------------------------------------------
