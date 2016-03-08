@@ -255,11 +255,17 @@ Alias name, description: PDB code, where applicable.
 
 type "T4L" on the command line. Now type "AO". You should get an image like the following:
 
+<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="90%"></img>
 
 
 #### Demo2: 
 
-type "T4L" on the command line. Now type "BW". You should get an image like the following:
+type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following:
+
+<img src="   " width="90%"></img>
+
+
+
 
 
 Reference, License, and Copyright
