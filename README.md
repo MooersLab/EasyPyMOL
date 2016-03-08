@@ -6,8 +6,8 @@ Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches des
 "Easier use of PyMOL with horizontal scripts". 
 
 Ribbon diagram made with alias "T4L"         | Ambient occlusion image made with alias 'AO"
-:-------------------------:|:-------------------------:
-<img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" alt="Figure1" width="45%"/> |  <img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="245%"/>
+-------------------------------------------- | --------------------------------------------
+<img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="45%"/> |<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="100%"/>
 
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" alt="Figure1" width="50%"/>
