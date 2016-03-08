@@ -418,7 +418,7 @@ Type 'help NA' to see a very long script mapped to two a letter command.
 
 Type "NA" to get the resulting image of a sodium cation bound with inner sphere coordination to the N7 nitrogen of an adenine and to five waters. The sodium is in the major groove of a double-strande RNA molecule (PDB-ID 3nd4). The dashed lines represent hydrogen bonds. The numbers are distances in angstroms.
 
-![na](https://cloud.githubusercontent.com/assets/15176203/13609340/27c83d56-e51e-11e5-9d1e-229d51afef61.png)
+![naadenine](https://cloud.githubusercontent.com/assets/15176203/13609887/853536a4-e520-11e5-9978-9ea1da4f0884.png)
 
 
 Reference, License, and Copyright
