@@ -47,7 +47,7 @@ Paste above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) c
 What this is
 --------------------------------------------------------------------------------
 
-This python script includes the short function `roundview()` to reformat the viewing port setting matrix from six rows to one row for use with other commands separated by a command line on a single row.  
+The python script roundview.py includes the short function `roundview()` that reformats the viewing port setting matrix from six rows to one row. The more compact format makes it easy to copy and paste onto the command liine. Other commands that are separated by semicolons can be add to the same line with the settings. This defines a horiontal script. The script can include commnents lines that are isolated by semicolons.
 
 Requirements
 --------------------------------------------------------------------------------
@@ -62,7 +62,8 @@ Tested on:
 We tried to make the code backward compatible to 1.5. We do not gaurantee that this
 code works with earlier versions of PyMOL. Nor do we guarantee that the code will
 do not fail in future versions of PyMOL. In PyMOL version 1.6, there were
-several changes reduced backward compatibility. 
+several changes reduced backward compatibility. We also do not guarantee that
+the code will work after you cusotmize its installation.
 
 Instructions
 --------------------------------------------------------------------------------
