@@ -156,7 +156,7 @@ Link to roundview.py installation video for MacPyMOL:
 
 Link to roundview.py installation video for PyMOL om Windows:
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=XTwwWgwj4z0)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=Dh2ihD5mIxY)
 
 
 #### How to run
