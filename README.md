@@ -146,10 +146,6 @@ Type "roundview" on either command line. You should get back this if no molecule
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
    ```
    
-## Link to roundview.py installation video for Linux and PyMOLHyridX11 for the mac on YouTube:
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XQWQzq48DeA/0.jpg)](http://www.youtube.com/watch?v=XQWQzq48DeA)
-
 ## Link to roundview.py installation video for MacPyMOL:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=XTwwWgwj4z0)
@@ -157,6 +153,10 @@ Type "roundview" on either command line. You should get back this if no molecule
 ## Link to roundview.py installation video for PyMOL om Windows:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=Dh2ihD5mIxY)
+
+## Link to roundview.py installation video for Linux and PyMOLHyridX11 for the mac on YouTube:
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XQWQzq48DeA/0.jpg)](http://www.youtube.com/watch?v=XQWQzq48DeA)
 
 
 #### How to run
