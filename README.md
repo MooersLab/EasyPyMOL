@@ -222,16 +222,20 @@ Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.
   Enter on the command line in PyMOL the following command:
  
 ```py  
-run ~/Scripts/PyMOLScripts/exam2.py
+run ~/Scripts/PyMOLScripts/exam2function.py
 ```
 
 Now the aliases q1,q2, ..., q8 are active.
   
-Type 'q1' to execute the alias.
+Type 'q1' to execute the alias assoicated with exam quesitno 1.
   
 Type 'help q1' to print the documentation to the PyMOL command history window. 
+The bottom of the documentation includes the corresponding horizontal script.
+All or parts of the horizontal script can be copied from the command history 
+window for reuse of the code in another horizontal script or a traditional 
+vertical script.
   
-Tested on PyMOL versions 1.5.0.5 AND 1.8.0.5. 
+Tested on PyMOL versions 1.5.0.5, 1.7.7.2 (from macports), and 1.8.0.5. 
 
 
 ### StartupAliases.py
@@ -247,7 +251,7 @@ Now these aliases will be available whenever you startup PyMOL.
 
 Type the 'alias name' to execute it.
 
-Type 'help alias name' to see the documentation which includes a list vertical list of the commands mapped to the alias and a horizontal script for easy copying and pasting onto the command line. 
+Type 'help alias name' to see the documentation which includes a vertical list of the commands mapped to the alias and a horizontal script for easy copying and pasting onto the command line or into a script line. 
 
 Format of list below:
 
@@ -273,7 +277,6 @@ Alias name, description: PDB code, where applicable.
 #### Complex representations applied to any visible molecular object:
   
 * AO, Make ambient occlusion image. Requires global view of protein.
-* BS, Make fancy ball and stick representation of visible atoms. 
 * BU, Display biological unit. 
 * CB, Define color blind compatible coloring scheme. 
 * BW, Make black and white ribbon cartoon on white background.
@@ -329,13 +332,19 @@ USAGE
 
 #### Demo 2: 
 
-type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following. These black and white
+Type "T4L" on the command line. Now type "BW". You should get a black and white  image like the following. These black and white
 figures are useful when color figures are not needed:
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/13590390/201de41c-e4a5-11e5-9835-7aced7982306.png" width="90%"></img>
 
 
-#### Demo 3: 
+#### Demo 3:
+
+Type "U8" on the command line. Convert this to black and white with "BW".
+
+<img src="https://cloud.githubusercontent.com/assets/15176203/13590390/201de41c-e4a5-11e5-9835-7aced7982306.png" width="90%"></img>
+
+#### Demo 4: 
 
 Type 'help NA' to see a very long script mapped to two a letter command.
 
