@@ -342,7 +342,7 @@ figures are useful when color figures are not needed:
 
 Type "U8" on the command line. Convert this to black and white with "BW".
 
-<img src="https://cloud.githubusercontent.com/assets/15176203/13590390/201de41c-e4a5-11e5-9835-7aced7982306.png" width="90%"></img>
+<img src="https://cloud.githubusercontent.com/assets/15176203/13672122/089167a6-e699-11e5-89bd-19307f6e1181.png" width="90%"></img>
 
 #### Demo 4: 
 
