@@ -5,6 +5,10 @@ Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches des
 [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*under revision*).
 "Easier use of PyMOL with horizontal scripts". 
 
+Click on icon to see 4 minute introductory video:
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=XRsAaKq4afs)
+
 #### Ambient occlusion image of phage T4 lysozyme made with the alias "AO" 
 17 commands were placed on one line as a horizontal script.
 
