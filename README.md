@@ -23,7 +23,8 @@ Another image made with a horizontal script.
 
 
 
-### *Problem*: the view  port settings return from [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) is too hard to copy and paste quickly onto one line with other commands during horizontal scripting.
+### *Problem*: the view  port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) is too hard to copy and paste onto the command line becuase the line breaks have to be removed. These settings are often changed many times during the editing of 
+a new scene. 
 
 ```python
 PyMOL>get_view  
