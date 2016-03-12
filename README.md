@@ -23,7 +23,7 @@ Another image made with a horizontal script.
 
 
 
-## *Problem*: viewing port matrix from [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) is too hard to copy and paste quickly onto one line with other commands during horizontal scripting
+### *Problem*: the view  port settings return from [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) is too hard to copy and paste quickly onto one line with other commands during horizontal scripting.
 
 ```python
 PyMOL>get_view  
@@ -39,52 +39,59 @@ set_view(\
 ### cut above here and paste into script ###
 ```
 
-## *Solution*: The function `roundview()` in [`roundview.py`](.\roundview.py)
+## *Solution*: The function `roundview()` in the script [`roundview.py`](.\roundview.py) which is available from this website.
 
 ```py
 PyMOL>roundview  
 set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.66,42.4,56.26,66.53,-20.0);
 ```
     
-Paste above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts).
+Paste the above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts) in a plain text editor.
 
 What this is
 --------------------------------------------------------------------------------
 
-The python script roundview.py includes the short function `roundview()` that reformats the viewing port setting matrix from six rows to one row. The more compact format makes it easy to copy and paste it onto the command liine. Other commands that are separated by semicolons can be added to the same line with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons.
+The python script roundview.py includes the short function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from roundview() is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
+
+* cntrl-a  moves cursor to the beginning of the line
+* cntrl-e  moves cursor to the end of the line
+* shift-cntrl-a  selects everthing to from the cursor to the beginning of the line
+* shift-cntrl-e  selects everthing to from the cursor to the end of the line
+* command-f  move forward by one word
+* commend-b  move backward by one word
 
 Requirements
 --------------------------------------------------------------------------------
 
 Requires a molecular object loaded into an interactive session of PyMOL. Does not
-require any  modules outside of two in PyMOL. Should work on all versions of PyMOL. 
+require any modules outside of two in PyMOL. Should work on all versions of PyMOL. 
 Tested on:
 * Ubuntu 14.04 64 bit with PyMOL 1.7.2.2. 
 * Windows 8 32 bit  running PyMOL 1.7.6.2 and PyMOL 1.7.6.6. 
 * Mac OSX 10.10.5 64 bit running PyMOL 1.5.0.5, 1.7.6.6 (via macports), and 1.8.0.5. 
 
-We tried to make the code backward compatible to 1.5. We do not gaurantee that this
+We tried to make the code backward compatible to PyMOL 1.5. We do not gaurantee that this
 code works with earlier versions of PyMOL. Nor do we guarantee that the code will
-do not fail in future versions of PyMOL. In PyMOL version 1.6, there were
-several changes reduced backward compatibility. We also do not guarantee that
-the code will work after you cusotmize its installation.
+not fail in future versions of PyMOL. In PyMOL version 1.6, there were
+several changes that reduced backward compatibility. We also do not guarantee that
+the code will work if you install in a way that is different from the methods that we describe here.
 
 Instructions
 --------------------------------------------------------------------------------
 
-#### Quick start instructions for GitHub beginning users
+#### Quick start instructions for beginning users of Github
 
 Watch this 1 minute video or read on. 
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=GnRtEhGvPBQ)
 
 
-Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/username or /home/username or C:\Users\username. Start PyMOL. Check that PyMOL's current directory is in the home directory with the pwd command. Check for presence of roundview.py with "ls *.py". 
+Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is in the home directory by entering the "pwd" command on the command line in PyMOL. Check for presence of roundview.py with "ls *.py". 
 
 ```shell
 ls *.py
 ```
-Paste the following horizontal script on the command line of the top or external gui:
+Paste the following horizontal script on the command line just below the command history window in the top or external gui:
 ```shell
 fetch 1lw9, async=0; run roundview.py; roundview 0,1
 ```
@@ -98,11 +105,11 @@ Type the following to see the default format from get_view.
 get_view
 ```
 
-Which do you think looks easier to add to the command line in PyMOL?
+Which looks easier to copy from the command history window and paste onto the command line in PyMOL?
 
-#### More advanced ways to install 
+#### More advanced ways to install roundview.py
 
-Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
+Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type the following command in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
 
 ```shell
 git clone https://github.com/MooersLab/EasyPyMOL.git
@@ -111,15 +118,14 @@ git clone https://github.com/MooersLab/EasyPyMOL.git
 You need the program [Git](https://git-scm.com/) installed on your computer. Git is available via macports on a mac or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
-There are at least different four ways of loading the script into PyMOL:
+There are at least four different ways of loading the script into PyMOL:
 
 1. move [`roundview.py`](./roundview.py) to the working directory of pymol. In pymol, type 
 
    ```py
     run roundview.py
    ```
-Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview command and the
-on-line documentation are available with 
+Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview command is available by typing "roundview", and the on-line documentation is available by typing "roundview".
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
@@ -189,7 +195,7 @@ Usage: `roundview [view, decimal places, outname]`
 Quick test with wildtype bacteriophage T4 lysozyme, 3fa0
 --------------------------------------------------------------------------------
 
-Open up pymol. Copy and paste the entire line below onto the command line in the external gui (the on above the GL viewing port). This is an example of a horizontal script. By hitting the up arrow key, you can recall this command for editing on the command line. This code block is  more agile to edit than opening, editing, saving, and loading an external script file.
+Open up pymol. Copy and paste the entire line below onto the command line in the external gui (the on above the GL viewing port). This is an example of a horizontal script. By hitting the up arrow key, you can recall this command for editing on the command line. This code block is more agile to edit than opening, editing, saving, and loading an external script file.
 
 ```py
 fetch 3fa0,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_color white; show cartoon;color red, ss H;color yellow, ss S;color green, ss L+'';roundview  
@@ -220,8 +226,7 @@ Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.
   Defines aliases q1-q8 for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems course. Each alias is 
   is mapped to a number of commands.  
   
-  Create ~/Scripts/PyMOLScripts and store the script in this subfolder or store in some other folder of your choosing,
-  if you know what you are doing. 
+  Create ~/Scripts/PyMOLScripts and store the script in this subfolder. 
   
   Enter on the command line in PyMOL the following command:
  
@@ -255,7 +260,7 @@ Now these aliases will be available whenever you startup PyMOL.
 
 Type the 'alias name' to execute it.
 
-Type 'help alias name' to see the documentation which includes a vertical list of the commands mapped to the alias and a horizontal script for easy copying and pasting onto the command line or into a script line. 
+Type 'help alias name' to see the documentation, which includes a vertical list of the commands mapped to the alias to ease the copying of isolated commands from the command history window during code reuse. The corresponding horizontal script without line breaks is also printed. It can be selected in the command history window and pasted onto the command line. 
 
 Format of list below:
 
