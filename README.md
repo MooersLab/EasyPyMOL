@@ -53,12 +53,12 @@ What this is
 
 The python script roundview.py includes the short function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from roundview() is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
 
-* cntrl-a  moves cursor to the beginning of the line
-* cntrl-e  moves cursor to the end of the line
-* shift-cntrl-a  selects everthing to from the cursor to the beginning of the line
-* shift-cntrl-e  selects everthing to from the cursor to the end of the line
-* command-f  move forward by one word
-* commend-b  move backward by one word
+* **cntrl-a**  moves cursor to the beginning of the line
+* **cntrl-e**  moves cursor to the end of the line
+* **shift-cntrl-a**  selects everthing to from the cursor to the beginning of the line
+* **shift-cntrl-e**  selects everthing to from the cursor to the end of the line
+* **command-f**  move forward by one word
+* **commend-b**  move backward by one word
 
 Requirements
 --------------------------------------------------------------------------------
