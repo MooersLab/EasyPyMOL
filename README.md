@@ -268,31 +268,31 @@ Alias name, description: PDB code, where applicable.
   
 #### Molecules in standard orientations: 
   
-* T4L, WT T4 lysozyme (1.09 ang) as a ribbon diagram: 3fa0. 
-* U8, 16-mer dsRNA with 8 contiguous Us. U-helix RaNA (1.37 ang): 3nd3.
-* WC8, 16-mer RNA with all Watson-Crick base pairs (1.67 ang): 3nd4.
-* N9, neuraminidase as cartoon, biological unit (1.55 ang): 4dgr.
-* GGT, gamma glutamyl transpeptidase as cartoon (1.67 ang): 4gdx.
-* GU, 10-mer RNA with eight GU base pairs (1.32 ang): 4pco.
+* **T4L**, WT T4 lysozyme (1.09 ang) as a ribbon diagram: 3fa0. 
+* **U8**, 16-mer dsRNA with 8 contiguous Us. U-helix RaNA (1.37 ang): 3nd3.
+* **WC8**, 16-mer RNA with all Watson-Crick base pairs (1.67 ang): 3nd4.
+* **N9**, neuraminidase as cartoon, biological unit (1.55 ang): 4dgr.
+* **GGT**, gamma glutamyl transpeptidase as cartoon (1.67 ang): 4gdx.
+* **GU**, 10-mer RNA with eight GU base pairs (1.32 ang): 4pco.
 
 
 #### Complex figures to serve as templates: 
   
-* BST, Base-stacking figure, (1.32 ang): 4pco. 
-* LG, Electron density map of nine sugar glycan,(1.55 ang):, 4dgr. 
-* NA, Sodium cation in major groove of 16-mer RNA: 3nd4.
+* **BST**, Base-stacking figure, (1.32 ang): 4pco. 
+* **LG**, Electron density map of nine sugar glycan,(1.55 ang):, 4dgr. 
+* **NA**, Sodium cation in major groove of 16-mer RNA: 3nd4.
 
 
 #### Complex representations applied to any visible molecular object:
   
-* AO, Make ambient occlusion image. Requires global view of protein.
-* BU, Display biological unit. 
-* CB, Define color blind compatible coloring scheme. 
-* BW, Make black and white ribbon cartoon on white background.
-* CSS, Color ribbon and cartoons by secondary structure: red, green and yellow. 
-* CBSS, Color ribbon and cartoons with dcolorblind friendly colors. 
-* CR, Commands to make colored filled-ring cartoon of nucleic acids..
-* FR, Commands to make filled-ring cartoon of nucleic acids.
+* **AO**, Make ambient occlusion image. Requires global view of protein.
+* **BU**, Display biological unit. 
+* **CB**, Define color blind compatible coloring scheme. 
+* **BW**, Make black and white ribbon cartoon on white background.
+* **CSS**, Color ribbon and cartoons by secondary structure: red, green and yellow. 
+* **CBSS**, Color ribbon and cartoons with dcolorblind friendly colors. 
+* **CR**, Commands to make colored filled-ring cartoon of nucleic acids..
+* **FR**, Commands to make filled-ring cartoon of nucleic acids.
 
 #### Demo 1: 
 
@@ -309,7 +309,9 @@ DESCRIPTION
     
     Commands to make ambient occlusion image like those in Qutemole. 
     
+    
 USAGE
+    
     Type 'AO' to activate. Type 'help AO' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
@@ -372,6 +374,7 @@ Type 'help NA' to see a very long script mapped to two a letter command.
     Import the file with the @Labels.pml command. 
     Include the path to the file if the labels file is not 
     in the current working directory of PyMOL. 
+    
     
     USAGE
     
