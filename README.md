@@ -38,7 +38,7 @@ set_view(\
 ```
 
 ### Solution: 
-The function `roundview()` in the script [`roundview.py`](.\roundview.py) which is available from this website.
+the function `roundview()` in the script [`roundview.py`](.\roundview.py) which is available from this website.
 
 ```py
 PyMOL>roundview  
@@ -47,10 +47,10 @@ set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.6
     
 Paste the above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts) in a plain text editor.
 
-What this is
---------------------------------------------------------------------------------
+###What is the roundview() function?
 
-The python script roundview.py includes the short function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from roundview() is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
+
+The Python script roundview.py includes the function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from roundview() is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
 
 * **cntrl-a**  moves cursor to the beginning of the line
 * **cntrl-e**  moves cursor to the end of the line
@@ -73,10 +73,9 @@ We tried to make the code backward compatible to PyMOL 1.5. We do not gaurantee 
 code works with earlier versions of PyMOL. Nor do we guarantee that the code will
 not fail in future versions of PyMOL. In PyMOL version 1.6, there were
 several changes that reduced backward compatibility. We also do not guarantee that
-the code will work if you install in a way that is different from the methods that we describe here.
+the code will work if you install in a way that is different from the methods that we describe below.
 
-Instructions
---------------------------------------------------------------------------------
+###Instructions
 
 #### Quick start instructions for beginning users of Github
 
@@ -85,7 +84,7 @@ Watch this 1 minute video or read on.
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=GnRtEhGvPBQ)
 
 
-Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is in the home directory by entering the "pwd" command on the command line in PyMOL. Check for presence of roundview.py with "ls *.py". 
+Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save the file to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is the home directory by entering "pwd" on the command line in PyMOL. Check for presence of roundview.py by entering  "ls *.py" on the command line in PyMOL. 
 
 ```shell
 ls *.py
@@ -108,7 +107,7 @@ Which looks easier to copy from the command history window and paste onto the co
 
 #### More advanced ways to install roundview.py
 
-Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type the following command in a terminal window in your home directory or the directory where you store your PyMOL python scripts 
+Get the script. Either download the folder from [this link](https://github.com/MooersLab/EasyPyMOL/archive/master.zip) or type the following command in a terminal window in your home directory or the directory where you store your PyMOL Python scripts 
 
 ```shell
 git clone https://github.com/MooersLab/EasyPyMOL.git
