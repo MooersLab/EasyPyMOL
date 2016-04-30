@@ -49,7 +49,6 @@ Paste the above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_Vie
 
 ###What is the roundview() function?
 
-
 The Python script roundview.py includes the function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from roundview() is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
 
 * **cntrl-a**  moves cursor to the beginning of the line
@@ -59,21 +58,16 @@ The Python script roundview.py includes the function `roundview()` that reformat
 * **command-f**  move forward by one word
 * **commend-b**  move backward by one word
 
-Requirements
---------------------------------------------------------------------------------
+###Requirements
 
-Requires a molecular object loaded into an interactive session of PyMOL. Does not
-require any modules outside of two in PyMOL. Should work on all versions of PyMOL. 
+Requires a molecular object loaded into an interactive session of PyMOL. Does not require any modules other than two in PyMOL. Should work on all versions of PyMOL. 
 Tested on:
 * Ubuntu 14.04 64 bit with PyMOL 1.7.2.2. 
 * Windows 8 32 bit  running PyMOL 1.7.6.2 and PyMOL 1.7.6.6. 
 * Mac OSX 10.10.5 64 bit running PyMOL 1.5.0.5, 1.7.6.6 (via macports), and 1.8.0.5. 
 
-We tried to make the code backward compatible to PyMOL 1.5. We do not gaurantee that this
-code works with earlier versions of PyMOL. Nor do we guarantee that the code will
-not fail in future versions of PyMOL. In PyMOL version 1.6, there were
-several changes that reduced backward compatibility. We also do not guarantee that
-the code will work if you install in a way that is different from the methods that we describe below.
+We tried to make the code backward compatible to PyMOL 1.5. We do not gaurantee that this code works with earlier versions of PyMOL. Nor do we guarantee that the code will not fail in future versions of PyMOL. In PyMOL version 1.6, there were
+several changes that reduced the backward compatibility. We also do not guarantee that the code will work if you install the code in a location that is different from that described below.
 
 ###Instructions
 
@@ -123,14 +117,13 @@ There are at least four different ways of loading the script into PyMOL:
    ```py
     run roundview.py
    ```
-Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview command is available by typing "roundview", and the on-line documentation is available by typing "roundview".
+Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview() command is available by typing "roundview", and the on-line documentation is available by typing "roundview".
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
-3. copy [`roundview.py`](./roundview.py) to safe folder that will not be deleted when you delete PyMOL. I use `~/Scripts/PyMOLScripts/`. Then load into PyMOL using method 1 or 2. 
+3. copy [`roundview.py`](./roundview.py) to a safe folder that will not be deleted when you delete PyMOL. I use `~/Scripts/PyMOLScripts/`. Then load roundview() into PyMOL using method 1 or 2. 
 
-4. create or edit the hidden file `.pymolrc` (`pymolrc.pml` and not hidden on Windows) text file in the home directory so that it includes the following lines so that roundview.py is always loaded upon startup. This option also works without the first two lines. 
-  
+4. create or edit the hidden text file `.pymolrc` (named `pymolrc.pml` and not hidden on Windows) in the home directory so that it includes the following lines so that `roundview.py` is always loaded upon startup. This option also works without the first two lines.
    ```py
     import sys
     sys.path.append('/Path/To/roundview')
@@ -142,14 +135,14 @@ For example:
     sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
     run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
    ```
-Restart pymol. You should see something like the following in the command history window if your path to the script is correct. 
+Restart PyMOL. You should see something like the following in the command history window if your path to the script is correct. 
    ```py
     PyMOL>import sys
     PyMOL>sys.path.append('/Users/blaine-mooers/Scripts/PyMOLScripts/')
     PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
    ```
 
-Type "roundview" on either command line. You should get back this if no molecule is loaded:
+Type "roundview" on either command line. You should get back the following in the command history window if no molecule is loaded:
    ```py
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
    ```
@@ -158,11 +151,11 @@ Type "roundview" on either command line. You should get back this if no molecule
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=XTwwWgwj4z0)
 
-## Link to roundview.py installation video for PyMOL om Windows:
+## Link to roundview.py installation video for PyMOL on Windows:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=Dh2ihD5mIxY)
 
-## Link to roundview.py installation video for Linux and PyMOLHyridX11 for the mac on YouTube:
+## Link to roundview.py installation video for Linux and PyMOLHyridX11 for Mac:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XQWQzq48DeA/0.jpg)](http://www.youtube.com/watch?v=XQWQzq48DeA)
 
@@ -170,7 +163,7 @@ Type "roundview" on either command line. You should get back this if no molecule
 #### How to run
 --------------------------------------------------------------------------------
 
-After loading a pdb file and setting up the molecular scene, type on one of the command lines in PyMOL:
+After loading a pdb file and setting up the molecular scene, type on a command line in PyMOL:
 
    ```py
     PyMOL>roundview
@@ -178,11 +171,12 @@ After loading a pdb file and setting up the molecular scene, type on one of the 
 
 ##### How to get help
 
-Type the following on one of the command lines in PyMOL
+Type the following on a command line in PyMOL
 
    ```py
     PyMOL> help roundview
    ```
+Something like the following should be printed to the command history window: 
 
 Usage: `roundview [view, decimal places, outname]` 
 * The values in the [ ] are optional.  
