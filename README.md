@@ -20,8 +20,8 @@ Another image made with a horizontal script.
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="60%"/>
 
-####Problem: 
-The view  port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line becuase the line breaks have to be removed. These settings are often changed many times during the editing of a new scene. 
+###Problem: 
+the view port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line becuase the line breaks have to be removed. These settings are often changed many times during the editing of a new scene. 
 
 ```python
 PyMOL>get_view  
@@ -37,7 +37,8 @@ set_view(\
 ### cut above here and paste into script ###
 ```
 
-## *Solution*: The function `roundview()` in the script [`roundview.py`](.\roundview.py) which is available from this website.
+### Solution: 
+The function `roundview()` in the script [`roundview.py`](.\roundview.py) which is available from this website.
 
 ```py
 PyMOL>roundview  
