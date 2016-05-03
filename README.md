@@ -117,7 +117,7 @@ There are at least four different ways of loading the script into PyMOL:
    ```py
     run roundview.py
    ```
-Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview() command is available by typing "roundview", and the on-line documentation is available by typing "roundview".
+Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview() command is available by typing "roundview", and the on-line documentation is available by typing "help roundview".
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
