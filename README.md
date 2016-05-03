@@ -1,6 +1,8 @@
 # PyMOL made easier with horizontal scripting
 *Script to facilitate the making of horizontal scripts*
 
+[![DOI](https://zenodo.org/badge/20847/MooersLab/EasyPyMOL.svg)](https://zenodo.org/badge/latestdoi/20847/MooersLab/EasyPyMOL)
+
 Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in the manuscript:
 [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*under revision*).
 "Easier use of PyMOL with horizontal scripts". 
