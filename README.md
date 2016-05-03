@@ -117,7 +117,7 @@ There are at least four different ways of loading the script into PyMOL:
    ```py
     run roundview.py
    ```
-Please note that the "run" command just loads the script into PyMOL. It does not execute it. Now the roundview() command is available by typing "roundview", and the on-line documentation is available by typing "help roundview".
+Please note that the `run` command just loads the script into PyMOL. It does not execute it. Now the "roundview()" command is available by typing `roundview`and the on-line documentation is available by typing "help roundview".
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
@@ -215,10 +215,10 @@ Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.
 
 ### Exam2function.py
 
-  Defines aliases q1-q8 for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems course. Each alias is 
+  Defines aliases `q1-q8` for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems course. Each alias is 
   is mapped to a number of commands.  
   
-  Create ~/Scripts/PyMOLScripts and store the script in this subfolder. 
+  Create `~/Scripts/PyMOLScripts` and store the script in this subfolder. 
   
   Enter on the command line in PyMOL the following command:
  
