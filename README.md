@@ -107,7 +107,7 @@ Get the script. Either download the folder from [this link](https://github.com/M
 git clone https://github.com/MooersLab/EasyPyMOL.git
 ```
 
-You need the program [Git](https://git-scm.com/) installed on your computer. Git is available via macports on a mac or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+You need the program [Git](https://git-scm.com/) installed on your computer. Git is available via MacPorts or otherwise [see these instructions for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
 There are at least four different ways of loading the script into PyMOL:
@@ -304,7 +304,7 @@ DESCRIPTION
     
 USAGE
     
-    Type 'AO' to activate. Type 'help AO' to see this documentation
+    Type 'AO' to activate. Type `help AO` to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
@@ -370,7 +370,7 @@ Type 'help NA' to see a very long script mapped to two a letter command.
     
     USAGE
     
-    Type 'NA' to activate. Type `help NA` to see this documentation
+    Type `NA` to activate. Type `help NA` to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
@@ -438,7 +438,7 @@ Type 'help NA' to see a very long script mapped to two a letter command.
     delete all;viewport 900,600;fetch 3nd4, type=pdb,async=0;run ~/Scripts/PyMOLScripts/quat.py;quat 3nd4; show sticks;set stick_radius=0.125;hide everything, name H*;bg_color white;create coorCov, (3nd4_1 and (resi 19 or resi 119 or resi 219 or resi 319 or resi 419 or resi 519 or (resi 3 and name N7)));bond (coorCov//A/NA`19/NA),(coorCov//A/A`3/N7); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`119/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`219/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`319/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`419/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`519/O);distance (3nd4_1 and chain Aand resi 19 and name NA), (3nd4_1 and chain A and resi 519);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 419);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 119);distance (3nd4_1 and chain A and resi 19 and name NA),(3nd4_1 and chain A and resi 319);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 219);show nb_spheres; set nb_spheres_size, .35;distance hbond1,/3nd4_1/1/A/HOH`119/O, /3nd4_1/1/A/A`3/OP2;distance hbond2,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/A`3/OP2;distance hbond3,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/HOH`119/O;distance hbond4,/3nd4_1/1/A/G`4/N7,/3nd4_1/1/A/HOH`91/O;distance hbond5,/3nd4_1/1/A/G`4/O6, /3nd4_1/1/A/HOH`419/O;distance hbond6,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/G`4/OP2;distance hbond7,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/G`2/OP2;distance  hbond9,/3nd4_1/1/A/HOH`419/O,/3nd4_2/2/A/HOH`74/O;distance hbond10,/3nd4_2/2/A/C`15/O2,/3nd4_1/1/A/G`2/N2;distance hbond11, /3nd4_2/2/A/C`15/N3,/3nd4_1/1/A/G`2/N1;distance hbond12,/3nd4_2/2/A/C`15/N4,/3nd4_1/1/A/G`2/O6;distance hbond13, /3nd4_2/2/A/U`14/N3,/3nd4_1/1/A/A`3/N1;distance hbond14,3nd4_2/2/A/U`14/O4,/3nd4_1/1/A/A`3/N6;distance hbond15, /3nd4_2/2/A/C`13/N4,/3nd4_1/1/A/G`4/O6;distance hbond16,/3nd4_2/2/A/C`13/N3, /3nd4_1/1/A/G`4/N1;distance hbond17, /3nd4_1/1/A/G`4/N2,/3nd4_2/2/A/C`13/O2;distance hbond18,/3nd4_1/1/A/G`2/N2,/3nd4_2/2/A/C`15/O2;distance hbond19,/3nd4_1/1/A/HOH`91/O,/3nd4_1/1/A/G`4/OP2;set depth_cue=0;set ray_trace_fog=0;set dash_color, black;set label_font_id, 5;set label_size, 36;set label_position, (0.5, 1.0, 2.0);set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;select carbon, element C; color yellow, carbon;disable carbon;set_view (-0.9,0.34,-0.26,0.33,0.18,-0.93,-0.27,-0.92,-0.28,-0.07,-0.23,-27.83,8.63,19.85,13.2,16.0,31.63,-20.0); 
 
 
-Type "NA" to get the resulting image of a sodium cation bound with inner sphere coordination to the N7 nitrogen of an adenine and to five waters. The sodium is in the major groove of a double-strande RNA molecule (PDB-ID 3nd4). The dashed lines represent hydrogen bonds. The numbers are distances in angstroms.
+Type `NA` to get the resulting image of a sodium cation bound with inner sphere coordination to the N7 nitrogen of an adenine and to five waters. The sodium is in the major groove of a double-strande RNA molecule (PDB-ID 3nd4). The dashed lines represent hydrogen bonds. The numbers are distances in angstroms.
 
 ![naadenine](https://cloud.githubusercontent.com/assets/15176203/13609887/853536a4-e520-11e5-9978-9ea1da4f0884.png)
 
