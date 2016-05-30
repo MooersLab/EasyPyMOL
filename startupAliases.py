@@ -3,6 +3,7 @@ from __future__ import print_function
 """
     DESCRIPTION
 
+<<<<<<< HEAD
         On the startup of PyMOL, this script defines a number of aliases.
         The aliases are listed here instead of in the pymolrc file
         to avoid clutter of the command history window. Source this 
@@ -19,6 +20,21 @@ from __future__ import print_function
         Requires quat.py from the PyMOL Wiki 
         (http://www.pymolwiki.org/index.php/BiologicalUnit/Quat) 
         Store quat.py in ~/Scripts/PyMOLScripts/.
+=======
+        Defines on startup aliases to three categories of commands.
+        Aliases are listed here instead of in the pymolrc file
+        to avoid clutter of the command history window on start up of 
+        PyMOL. Source from  your .pymolrc file on the mac or linux or 
+        in your pymolrc.pml file on Windows by adding the command:
+        
+        run ~/Scripts/PyMOLScripts/StartUpAliases.py    
+    
+        Tested on PyMOL version 1.8.0.5 and 1.5.0.5. 
+        No guarantee is given that this script will work with older
+        or newer versions of PyMOL.
+        
+        Requires quat.py from PyMOL Wiki. Store in ~/Scripts/PyMOLScripts/.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
   Copyright Notice
   ================
@@ -41,45 +57,78 @@ from __future__ import print_function
   
   Blaine Mooers , PhD 
   blaine-mooers@ouhsc.edu
+<<<<<<< HEAD
   975 NE 10th St, BRC 466
   University of Oklahoma Health Sciences Center, 
   Oklahoma City, OK, USA 73104
+=======
+  975 NWE 10th St, BRC 466
+  University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
 """ 
 from pymol import cmd
 __author__ = "Blaine Mooers"
+<<<<<<< HEAD
 __copyright__ = "Blaine Mooers, University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA 73104"
 __license__ = "GPL-3"
 __version__ = "1.0.2"
 __credits__ = ["William Beasley","Chiedza Kanyumbu"] 
 # people who reported bug fixes, made suggestions, etc. 
 __date__ = "30 May 2016"
+=======
+__copyright__ = "Blaine Mooers, University of \
+Oklahoma Health Sciences Center, Oklahoma City, OK, USA"
+__license__ = "GPL-3"
+__version__ = "1.0.1"
+__credits__ = ["William Beasley","Chiedza Kanyumbu"] 
+# people who reported bug fixes, made suggestions, etc. 
+__date__ = "19 February 2016"
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 __maintainer__ = "Blaine Mooers"
 __email__ = "blaine-mooers@ouhsc.edu"
 __status__ = "Production" 
 
 def SA():
     '''
+<<<<<<< HEAD
     DESCRIPTION
     
     StartUpAliases.py  Copyright (C) 2016  Blaine Mooers. 
     This script comes with ABSOLUTELY NO WARRANTY; for details, 
     please see the license file. 
+=======
+DESCRIPTION
+    StartUpAliases.py  Copyright (C) 2016  Blaine Mooers. 
+    This script comes with  ABSOLUTELY NO WARRANTY; for details, 
+    see source file. 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     Copy to ~/Scripts/PyMOLScripts/.
     Add this command on one line in  your .pymolrc file 
     (pymolrc.pml on Windows):
+<<<<<<< HEAD
     
     run ~/Scripts/PyMOLScripts/StartUpAliases.py
 
     Format of list below:
     alias name, description of alias: PDB code (where applicable). 
+=======
+    run ~/Scripts/PyMOLScripts/StartUpAliases.py
+
+    Format of list below:
+    Active alias, description: PDB code, where applicable. 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     Molecules in standard orientations: 
     
     T4L, WT T4 lysozyme (1.09 ang) as a ribbon diagram: 3fa0. 
     U8, 16-mer dsRNA with 8 contiguous Us. U-helix RaNA (1.37 ang): 3nd3.
+<<<<<<< HEAD
     WC8, 16-mer RNA with all Watson-Crick base pairs (1.52 ang): 3nd4.
+=======
+    WC8, 16-mer RNA with all Watson-Crick base pairs (1.67 ang): 3nd4.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     N9, neuraminidase as cartoon, biological unit (1.55 ang): 4dgr.
     GGT, gamma glutamyl transpeptidase as cartoon (1.67 ang): 4gdx.
     GU, 10-mer RNA with eight GU base pairs (1.32 ang): 4pco.
@@ -88,8 +137,13 @@ def SA():
     Complex figures to serve as templates: 
     
     BST, Base-stacking figure, (1.32 ang): 4pco. 
+<<<<<<< HEAD
     LG, Electron density map of nine sugar glycan (1.55 ang): 4dgr. 
     NA, Sodium cation in major groove of 16-mer RNA (1.52 ang): 3nd4.
+=======
+    LG, Electron density map of nine sugar glycan,(1.55 ang):, 4dgr. 
+    NA, Sodium cation in major groove of 16-mer RNA: 3nd4.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
 
     Complex representations applied to any visible molecular object:
@@ -99,12 +153,17 @@ def SA():
     CB, Define color blind compatible coloring scheme. 
     BW, Make black and white ribbon cartoon on white background.
     CSS, Color ribbon and cartoons by secondary structure: red, green and yellow. 
+<<<<<<< HEAD
     CBSS, Color ribbon and cartoons with colorblind friendly colors. 
+=======
+    CBSS, Color ribbon and cartoons with dcolorblind friendly colors. 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     CR, Commands to make colored filled-ring cartoon of nucleic acids..
     FR, Commands to make filled-ring cartoon of nucleic acids.
 
 
     Type the alias name to execute the commands. The names are case
+<<<<<<< HEAD
     sensitive. 
     
     Type 'help <AliasName>' (e.g., help T4L) for a description of the
@@ -117,6 +176,17 @@ def SA():
     
     Type 'SA' to refresh the list of aliases.
 
+=======
+    sensitive. Type 'help <AliasName>' (e.g., help T4L) for
+    description and the commands. Some aliases require additional
+    scripts. The commands can be copied from the command history
+    window and pasted onto the command line for code reuse. The first
+    set of commands has line breaks for easy selection of code fragments. 
+    The second set of commands is one one line for easy copying and 
+    pasting of the entire horizontal script. 
+    
+    Type 'SA' to refresh the list of aliases.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     print(SA.__doc__)
 cmd.extend('SA',SA)
@@ -124,16 +194,25 @@ cmd.extend('SA',SA)
 
 def T4L():
     '''
+<<<<<<< HEAD
     DESCRIPTION
     
     WT T4 lysozyme as ribbon diagram (1.08 Ang):  3FA0. 
     
     USAGE
 
+=======
+DESCRIPTION
+    
+    WT T4 lysozyme as ribbon diagram (1.08 Ang):  3Fa0. 
+    
+USAGE
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     Type 'T4L' to activate. Type 'help T4L' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
+<<<<<<< HEAD
     in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
@@ -157,6 +236,21 @@ def T4L():
     
     The commands without linebreaks:
     
+=======
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+        
+    delete all;fetch 3fa0,type=pdb,async=0;orient;
+    turn z,-90;turn y,-5;turn x,10; 
+    hide everything; bg_color white; 
+    show cartoon;color red, ss H;color yellow, ss S;
+    color green, ss L+;set_view (-0.18,-0.69,-0.7,0.98,-0.17,-0.09,
+    -0.06,-0.7,0.71,0.0,0.0,-165.67,34.77,11.27,9.52,132.07,
+    199.27,-20.0); ray 1500,1600;
+    
+    Commands without linebreaks:
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     delete all;fetch 3fa0,type=pdb,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_color white;show cartoon;color red, ss H;color yellow, ss S;color green, ss L+;set_view (-0.18,-0.69,-0.7,0.98,-0.17,-0.09,-0.06,-0.7,0.71,0.0,0.0,-165.67,34.77,11.27,9.52,132.07,199.27,-20.0); ray 1500,1600; 
     
     '''
@@ -179,18 +273,27 @@ cmd.extend('T4L',T4L)
     
 def U8():
     '''
+<<<<<<< HEAD
     DESCRIPTION
+=======
+DESCRIPTION
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     16-mer dsRNA with 8 contiguous Us. U-helix RNA (1.37 Ang):  3nd3.
     Has one strand in the asymmetric unit. Uses quat.py to generate
     the second strand. Cartoon with filled rings and bases cartoon.
     
+<<<<<<< HEAD
     USAGE
 
+=======
+USAGE
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     Type 'U8' to activate. Type 'help U8' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
+<<<<<<< HEAD
     in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
@@ -216,6 +319,23 @@ def U8():
     
     delete all;fetch 3nd3,type=pdb,async=0;run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py;quat 3nd3;hide everything;bg_color white; show sticks;set cartoon_ring_mode, 3;set cartoon_ring_finder, 1;set cartoon_ladder_mode, 1;set cartoon_nucleic_acid_mode, 4;set cartoon_ring_transparency, 0.5;as cartoon;set_view (-1.0,-0.03,0.06,-0.06,0.01,-1.0,0.04,-1.0,-0.01,-0.09,-0.02,-168.02,7.85,15.56,-0.21,137.38,199.33,-20.0);draw; 
 
+=======
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    delete all;fetch 3nd3,type=pdb,async=0;
+    run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py;quat 3nd3;
+    hide everything;bg_color white; show sticks;set cartoon_ring_mode, 3;
+    set cartoon_ring_finder, 1;set cartoon_ladder_mode, 1;
+    set cartoon_nucleic_acid_mode, 4;
+    set cartoon_ring_transparency, 0.5;as cartoon;
+    set_view (-1.0,-0.03,0.06,-0.06,0.01,-1.0,0.04,-1.0,-0.01,-0.09,
+    -0.02,-168.02,7.85,15.56,-0.21,137.38,199.33,-20.0);draw; 
+    
+    Commands without linebreaks:
+    delete all;fetch 3nd3,type=pdb,async=0;run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py;quat 3nd3;hide everything;bg_color white; show sticks;set cartoon_ring_mode, 3;set cartoon_ring_finder, 1;set cartoon_ladder_mode, 1;set cartoon_nucleic_acid_mode, 4;set cartoon_ring_transparency, 0.5;as cartoon;set_view (-1.0,-0.03,0.06,-0.06,0.01,-1.0,0.04,-1.0,-0.01,-0.09,-0.02,-168.02,7.85,15.56,-0.21,137.38,199.33,-20.0);draw; 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     
     cmd.reinitialize()
@@ -238,25 +358,41 @@ cmd.extend('U8',U8)
     
 def WC8():
     '''
+<<<<<<< HEAD
     DESCRIPTION
 
     16-mer dsRNA, Watson-Crick helix RNA. 1.55 Angstrom 
+=======
+DESCRIPTION
+
+    16-mer dsRNA. Watson-Crick helix RNA. 1.55 Angstrom 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     resolution: 3nd4.  Has one strand in the asymmetric unit. 
     Needs quat.py to generate the second strand. Use the 
     BU alias. Cartoon with filled rings and bases cartoon.
     
+<<<<<<< HEAD
     
     USAGE
 
+=======
+USAGE
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     Type 'WC8' to activate. Type 'help WC8' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
+<<<<<<< HEAD
     in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     delete all; 
     fetch 3nd4,type=pdb,async=0;
@@ -270,12 +406,21 @@ def WC8():
     show nb_spheres;
     set stick_ball, on; 
     set stick_ball_ratio, 1.8;
+<<<<<<< HEAD
     set_view (-0.99,-0.03,0.17,-0.18,0.02,-0.98,0.03,-1.0,-0.03,0.0,0.0,-169.97,8.1,15.62,-1.69,139.24,200.7,-20.0);
     hide everything,name H*;
     rock
 
     The commands without linebreaks:
     
+=======
+    set_view (-0.99,-0.03,0.17,-0.18,0.02,-0.98,0.03,-1.0,-0.03,
+    0.0,0.0,-169.97,8.1,15.62,-1.69,139.24,200.7,-20.0);
+    hide everything,name H*;
+    rock
+
+    Commands without linebreaks:
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     delete all; fetch 3nd4,type=pdb,async=0;hide everything; run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py; quat 3nd4;bg_color white; show sticks; set stick_radius, 0.12; set nb_spheres_size, 0.25; show nb_spheres; set stick_ball, on; set stick_ball_ratio, 1.8;set_view (-0.99,-0.03,0.17,-0.18,0.02,-0.98,0.03,-1.0,-0.03,0.0,0.0,-169.97,8.1,15.62,-1.69,139.24,200.7,-20.0);hide everything, name H*;rock 
 
     '''
@@ -299,20 +444,31 @@ cmd.extend('WC8',WC8)
     
 def N9():
     '''
+<<<<<<< HEAD
     DESCRIPTION
+=======
+DESCRIPTION
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     Influenza N9 neuraminidase at 1.55 Angstrom resolution, PDB code
     4dgr. The biological unit has four copies of the asymmetric unit.
     View is down the four-fold axis. Requires the quat.py script by
     Thomas Holder and available at the PyMOL Wiki page. Store quat.py
+<<<<<<< HEAD
     in ~/Scripts/PyMOLScripts.
 
     USAGE
 
+=======
+    in ~/Scripts/PyMOLScripts
+
+USAGE
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     Type 'N9' to activate. Type 'help N9' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
+<<<<<<< HEAD
     in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
@@ -321,6 +477,13 @@ def N9():
 
     delete all;
     fetch 4dgr, type=pdb, async=0;
+=======
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+
+    delete all;fetch 4dgr, type=pdb, async=0;
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py;
     quat 4dgr;
     as cartoon; 
@@ -331,6 +494,7 @@ def N9():
     color cyan, (not 4dgr_1 and ss H);
     color magenta, (not 4dgr_1 and ss S);
     color orange, (not 4dgr_1 and ss L+);
+<<<<<<< HEAD
     set_view (0.98,-0.22,0.01,0.22,0.98,0.02,-0.01,-0.02,1.0,-0.0,0.0,-323.44,1.46,5.33,56.19,274.72,372.15,-20.0);
     draw 
 
@@ -338,6 +502,13 @@ def N9():
 
     delete all;fetch 4dgr, type=pdb, async=0;run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py; quat 4dgr;as cartoon; bg_color white;color red, 4dgr_1 and ss H;color yellow,4dgr_1 and ss S;color green, 4dgr_1 and ss L+;color cyan, (not 4dgr_1 and ss H);color magenta, (not 4dgr_1 and ss S);color orange, (not 4dgr_1 and ss L+);set_view (0.98,-0.22,0.01,0.22,0.98,0.02,-0.01,-0.02,1.0,-0.0,0.0,-323.44,1.46,5.33,56.19,274.72,372.15,-20.0); draw 
 
+=======
+    set_view (0.98,-0.22,0.01,0.22,0.98,0.02,-0.01,-0.02,
+    1.0,-0.0,0.0,-323.44,1.46,5.33,56.19,274.72,372.15,-20.0);
+    draw 
+    
+    delete all;fetch 4dgr, type=pdb, async=0;run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py; quat 4dgr;as cartoon; bg_color white;color red, 4dgr_1 and ss H;color yellow,4dgr_1 and ss S;color green, 4dgr_1 and ss L+;color cyan, (not 4dgr_1 and ss H);color magenta, (not 4dgr_1 and ss S);color orange, (not 4dgr_1 and ss L+);set_view (0.98,-0.22,0.01,0.22,0.98,0.02,-0.01,-0.02,1.0,-0.0,0.0,-323.44,1.46,5.33,56.19,274.72,372.15,-20.0); draw 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.reinitialize()
     cmd.fetch('4dgr', type='pdb', async='0')
@@ -360,20 +531,33 @@ def GGT():
     '''
     DESCRIPTION
 
+<<<<<<< HEAD
     WT human gamma glutamyl transpeptidase at 1.67 Angstrom
     resolution as cartoon. PDB Code 4gdx.
     
     USAGE
 
+=======
+    WT human gamma glutamyl transpeptidase at 1.67  Angstrom
+    resolution as cartoon. PDB Code 4gdx.
+    
+USAGE
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     Type 'GGT' to activate. Type 'help GGT' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
+<<<<<<< HEAD
     in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     delete all;
     fetch 4gdx, type=pdb, async=0;
@@ -393,9 +577,14 @@ def GGT():
     set_view (0.55,-0.83,0.07,0.5,0.26,-0.82,0.66,0.49,0.56,0.0,0.0,-197.16,-22.42,-22.69,-12.01,155.44,238.88,-20.0); 
     draw 
     
+<<<<<<< HEAD
     The commands without linebreaks:
     
     delete all;fetch 4gdx, type=pdb, async=0;remove name H*;as cartoon;bg_color white; hide (name c+o+n);set cartoon_side_chain_helper,  on;color red, 4gdx and ss H; color yellow,4gdx and ss S;color green,4gdx and ss L+; select ASNNAG,resn NAG or resi 95 or i. 120  or i. 230 or i. 266 or i. 344 ori. 511 or i. 381; color red, elem o and ASNNAG; color blue, elem n and ASNNAG;color yellow, elem c  and ASNNAG;show sticks,ASNNAG;disable ASNNAG; set_view(0.55,-0.83,0.07,0.5,0.26,-0.82,0.66,0.49,0.56,0.0,0.0,-197.16,-22.42,-22.69,-12.01,155.44,238.88,-20.0); draw 
+=======
+    Commands without linebreaks:
+    delete all;fetch 4gdx, type=pdb, async=0;remove  name H*;as cartoon;bg_color white; hide (name c+o+n);set cartoon_side_chain_helper,  on;color red, 4gdx and ss H; color yellow,4gdx and ss S;color green,4gdx and ss L+; select ASNNAG,resn NAG or resi 95 or i. 120  or i. 230 or i. 266 or i. 344 ori. 511 or i. 381; color red, elem o and ASNNAG; color blue, elem n and ASNNAG;color yellow, elem c  and ASNNAG;show sticks,ASNNAG;disable ASNNAG; set_view(0.55,-0.83,0.07,0.5,0.26,-0.82,0.66,0.49,0.56,0.0,0.0,-197.16,-22.42,-22.69,-12.01,155.44,238.88,-20.0); draw 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     '''
     cmd.reinitialize()
@@ -429,18 +618,28 @@ def GU():
     hexammine 102. Cartoon with filled rings and
     bases cartoon.
     
+<<<<<<< HEAD
     
     USAGE
 
+=======
+USAGE
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     Type 'GU' to activate. Type 'help GU' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
+<<<<<<< HEAD
     in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     delete all;
     fetch 4PCO,type=pdb,async=0;
@@ -471,10 +670,15 @@ def GU():
     233.71,-20.0);
     draw 
     
+<<<<<<< HEAD
     The commands without linebreaks: 
     
     delete all;fetch 4PCO,type=pdb,async=0;hide everything;bg_color white; cartoon oval;set cartoon_ring_mode, 3;set cartoon_nucleic_acid_color, blue;select rna_A, resn A;select rna_C,resn C;select rna_G, resn G;select rna_U, resn U;color yellow, rna_A; color red, rna_C;color gray40, rna_G; color palecyan, rna_U;as cartoon;disable rna_U; set stick_radius, 0.12;set nb_spheres_size, 0.3; show nb_spheres; set stick_ball, on;set stick_ball_ratio, 1.8; show sticks, resn NCO;show spheres, name Cl; set_view (0.34,-0.81,0.48,0.89,0.11,-0.45,0.31,0.58,0.76,-0.0,0.0,-196.36,-9.82,6.76,15.84,159.01,233.71,-20.0);draw 
     
+=======
+    Commands without linebreaks: 
+    delete all;fetch 4PCO,type=pdb,async=0;hide everything;bg_color white; cartoon oval;set cartoon_ring_mode, 3;set cartoon_nucleic_acid_color, blue;select rna_A, resn A;select rna_C,resn C;select rna_G, resn G;select rna_U, resn U;color yellow, rna_A; color red, rna_C;color gray40, rna_G; color palecyan, rna_U;as cartoon;disable rna_U; set stick_radius, 0.12;set nb_spheres_size, 0.3; show nb_spheres; set stick_ball, on;set stick_ball_ratio, 1.8; show sticks, resn NCO;show spheres, name Cl; set_view (0.34,-0.81,0.48,0.89,0.11,-0.45,0.31,0.58,0.76,-0.0,0.0,-196.36,-9.82,6.76,15.84,159.01,233.71,-20.0);draw 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.reinitialize();
     cmd.fetch('4PCO', type='pdb', async='0')
@@ -515,6 +719,7 @@ def BST():
     From the 1.32 Angstrom resolution structure 
     of the RNA decamer with 8 GU base pairs.
     
+<<<<<<< HEAD
     USAGE
 
     Type 'BST' to execute. Type 'help BST' to see this documentation
@@ -526,6 +731,16 @@ def BST():
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+USAGE
+    Type 'BST' to activate. Type 'help BST' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     delete all;
     fetch 4PCO, type=pdb, async=0;
@@ -537,7 +752,12 @@ def BST():
     set stick_ball, on; 
     set stick_ball_ratio,1.9;
     set_view 
+<<<<<<< HEAD
     (-0.75,0.09,0.66,-0.2,0.92,-0.35,-0.64,-0.39,-0.67,-0.0,-0.0,-43.7,7.24,9.55,11.78,29.46,57.91,-20.0);
+=======
+    (-0.75,0.09,0.66,-0.2,0.92,-0.35,-0.64,-0.39,-0.67,-0.0,-0.0,-43.7
+    ,7. 24,9.55,11.78,29.46,57.91,-20.0);
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     remove name H*;
     select carbon1, element C and (resi 3 or resi 8) 
     # select lower base pair;
@@ -562,8 +782,12 @@ def BST():
     png 4PCO.png
     
     Commands without linebreaks: 
+<<<<<<< HEAD
     
     delete all;fetch 4PCO, type=pdb, async=0;select G2G3, ( ((resi 2 or resi 3) and chain A) or ((resi 8 or resi 9) and chain B));remove not G2G3;bg_color white;show sticks;set stick_radius=0.14;set stick_ball, on;set stick_ball_ratio,1.9;set_view (-0.75,0.09,0.66,-0.2,0.92,-0.35,-0.64,-0.39,-0.67,-0.0,-0.0,-43.7,7. 24,9.55,11.78,29.46,57.91,-20.0);remove name H*;select carbon1, element C and (resi 3 or resi 8);select carbon2, element C and (resi 2 or resi 9);color gray70, carbon1;color gray10, carbon2;show sticks;space cmyk;distance hbond1, /4PCO//B/U`9/N3,/4PCO//A/G`2/O6;distance hbond2, /4PCO//B/U`9/O2,/4PCO//A/G`2/N1;distance hbond3, /4PCO//A/U`3/N3,/4PCO//B/G`8/O6;distance hbond4, /4PCO//A/U`3/O2,/4PCO//B/G`8/N1;color black, hbond1;color black, hbond2;color gray70, hbond3;color gray70, hbond4;show nb_spheres;set nb_spheres_size, 0.35;hide labels;ray 1600,1000;png 4PCO.png
+=======
+delete all;fetch 4PCO, type=pdb, async=0;select G2G3, ( ((resi 2 or resi 3) and chain A) or ((resi 8 or resi 9) and chain B));remove not G2G3;bg_color white;show sticks;set stick_radius=0.14;set stick_ball, on;set stick_ball_ratio,1.9;set_view (-0.75,0.09,0.66,-0.2,0.92,-0.35,-0.64,-0.39,-0.67,-0.0,-0.0,-43.7,7. 24,9.55,11.78,29.46,57.91,-20.0);remove name H*;select carbon1, element C and (resi 3 or resi 8);select carbon2, element C and (resi 2 or resi 9);color gray70, carbon1;color gray10, carbon2;show sticks;space cmyk;distance hbond1, /4PCO//B/U`9/N3,/4PCO//A/G`2/O6;distance hbond2, /4PCO//B/U`9/O2,/4PCO//A/G`2/N1;distance hbond3, /4PCO//A/U`3/N3,/4PCO//B/G`8/O6;distance hbond4, /4PCO//A/U`3/O2,/4PCO//B/G`8/N1;color black, hbond1;color black, hbond2;color gray70, hbond3;color gray70, hbond4;show nb_spheres;set nb_spheres_size, 0.35;hide labels;ray 1600,1000;png 4PCO.png
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     '''
     cmd.reinitialize()
@@ -607,6 +831,7 @@ def LG():
     The electron density map is contoured at 1.0 sigma. 
     39 commands were used to make this figure.  
     
+<<<<<<< HEAD
     USAGE
 
     Type 'LG' to execute. Type 'help LG' to see this documentation
@@ -618,6 +843,16 @@ def LG():
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+USAGE
+    Type 'LG' to activate. Type 'help LG' to see this documentation
+   printed to the command history window. Select from the command
+   history individual lines of code to build a new script. Select the
+   hortizontal script at the bottom if retaining most of the commands
+   in your new script. Copy and paste onto the comand line below.
+   Works only with the command line immediately under the command
+   history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     delete all;
     fetch 4dgr, async=0;
@@ -660,9 +895,13 @@ def LG():
     draw 
     
     Commands without linebreaks:
+<<<<<<< HEAD
     
     delete all;fetch 4dgr, async=0;fetch 4dgr, type=2fofc, async=0;select LongGlycan, resi 469:477;orient LongGlycan;remove not LongGlycan;remove name H*;isomesh 2fofcmap, 4dgr_2fofc, 1, LongGlycan, carve = 1.8;color density, 2fofcmap; show sticks;show spheres;set stick_radius, .07;set sphere_scale, .19;set sphere_scale, .13, elem H;set bg_rgb=[1, 1, 1];set stick_quality, 50;set sphere_quality, 4;color gray85, elem C;color red, elem O;color slate, elem N;color gray98, elem H;set stick_color, gray50;set ray_trace_mode, 1;set ray_texture, 2;set antialias, 3;set ambient, 0.5;set spec_count, 5;set shininess, 50;set specular, 1;set reflect, .1;set dash_gap, 0;set dash_color, black;set dash_gap, .15;set dash_length, .05;set dash_round_ends, 0;set dash_radius, .05;set_view (0.34,-0.72,0.61,0.8,0.56,0.22,-0.51,0.4,0.77,0.0,0.0,-81.31,44.64,-9.02,58.62,65.34,97.28,-20.0);preset.ball_and_stick("all",mode=1);draw 
  
+=======
+    delete all;fetch 4dgr, async=0;fetch 4dgr, type=2fofc, async=0;select LongGlycan, resi 469:477;orient LongGlycan;remove not LongGlycan;remove name H*;isomesh 2fofcmap, 4dgr_2fofc, 1, LongGlycan, carve = 1.8;color density, 2fofcmap; show sticks;show spheres;set stick_radius, .07;set sphere_scale, .19;set sphere_scale, .13, elem H;set bg_rgb=[1, 1, 1];set stick_quality, 50;set sphere_quality, 4;color gray85, elem C;color red, elem O;color slate, elem N;color gray98, elem H;set stick_color, gray50;set ray_trace_mode, 1;set ray_texture, 2;set antialias, 3;set ambient, 0.5;set spec_count, 5;set shininess, 50;set specular, 1;set reflect, .1;set dash_gap, 0;set dash_color, black;set dash_gap, .15;set dash_length, .05;set dash_round_ends, 0;set dash_radius, .05;set_view (0.34,-0.72,0.61,0.8,0.56,0.22,-0.51,0.4,0.77,0.0,0.0,-81.31,44.64,-9.02,58.62,65.34,97.28,-20.0);preset.ball_and_stick("all",mode=1);draw 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.reinitialize()
     cmd.fetch('4dgr', async='0')
@@ -708,7 +947,11 @@ cmd.extend('LG',LG)
     
 def NA():
     '''
+<<<<<<< HEAD
     DESCRIPTION
+=======
+DESCRIPTION
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     Hydrated sodium cation bound in major groove of a 
     16-mer RNA of Watson-Crick base pairs.
@@ -724,6 +967,7 @@ def NA():
     Include the path to the file if the labels file is not 
     in the current working directory of PyMOL. 
     
+<<<<<<< HEAD
     USAGE
 
     Type 'NA' to execute. Type 'help NA' to see this documentation
@@ -735,6 +979,16 @@ def NA():
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+USAGE
+    Type 'NA' to activate. Type 'help NA' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     delete all;
     viewport 900,600;
@@ -745,6 +999,7 @@ def NA():
     set stick_radius=0.125;
     hide everything, name H*;
     bg_color white;
+<<<<<<< HEAD
     create coorCov, (3nd4_1 and (resi 19 or resi 119 or resi 219 or resi 319 or resi 419 or resi 519 or (resi 3 and name N7)));
     bond (coorCov//A/NA`19/NA),(coorCov//A/A`3/N7); 
     bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`119/O); 
@@ -759,6 +1014,27 @@ def NA():
     distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 219);
     show nb_spheres; 
     set nb_spheres_size, .35;
+=======
+    create coorCov, (3nd4_1 and (resi 19 or resi 119
+     or resi 219 or resi 319 or resi 419 or resi 519 or 
+    (resi 3 and name N7)));bond (coorCov//A/NA`19/NA),
+    (coorCov//A/A`3/N7); bond (coorCov//A/NA`19/NA),
+    (coorCov//A/HOH`119/O); bond (coorCov//A/NA`19/NA),
+    (coorCov//A/HOH`219/O); bond (coorCov//A/NA`19/NA),
+    (coorCov//A/HOH`319/O); bond (coorCov//A/NA`19/NA),
+    (coorCov//A/HOH`419/O); bond (coorCov//A/NA`19/NA),
+    (coorCov//A/HOH`519/O);distance (3nd4_1 and chain A
+    and resi 19 and name NA), (3nd4_1 and chain A and resi 519);
+    distance (3nd4_1 and chain A and resi 19 
+    and name NA), (3nd4_1 and chain A and resi 419);
+    distance (3nd4_1 and chain A and resi 19 and 
+    name NA), (3nd4_1 and chain A and resi 119);
+    distance (3nd4_1 and chain A and resi 19 and name NA), 
+    (3nd4_1 and chain A and resi 319);
+    distance (3nd4_1 and 
+    chain A and resi 19 and name NA), (3nd4_1 and chain A 
+    and resi 219);show nb_spheres; set nb_spheres_size, .35;
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     distance hbond1,/3nd4_1/1/A/HOH`119/O, /3nd4_1/1/A/A`3/OP2;
     distance hbond2,/3nd4_1/1/A/HOH`319/O,/3nd4_1/1/A/A`3/OP2;
     distance hbond3,/3nd4_1/1/A/HOH`91/O,/3nd4_1/1/A/HOH`119/O;
@@ -766,7 +1042,11 @@ def NA():
     distance hbond5,/3nd4_1/1/A/G`4/O6, /3nd4_1/1/A/HOH`419/O;
     distance hbond6,/3nd4_1/1/A/HOH`91/O,/3nd4_1/1/A/G`4/OP2;
     distance hbond7,/3nd4_1/1/A/HOH`319/O,/3nd4_1/1/A/G`2/OP2;
+<<<<<<< HEAD
     distance hbond9,/3nd4_1/1/A/HOH`419/O,/3nd4_2/2/A/HOH`74/O;
+=======
+    distance  hbond9,/3nd4_1/1/A/HOH`419/O,/3nd4_2/2/A/HOH`74/O;
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     distance hbond10,/3nd4_2/2/A/C`15/O2,/3nd4_1/1/A/G`2/N2;
     distance hbond11, /3nd4_2/2/A/C`15/N3,/3nd4_1/1/A/G`2/N1;
     distance hbond12,/3nd4_2/2/A/C`15/N4,/3nd4_1/1/A/G`2/O6;
@@ -794,12 +1074,20 @@ def NA():
     select carbon, element C; 
     color yellow, carbon;
     disable carbon;
+<<<<<<< HEAD
     set_view (-0.9,0.34,-0.26,0.33,0.18,-0.93,-0.27,-0.92,-0.28,-0.07,-0.23,-27.83,8.63,19.85,13.2,16.0,31.63,-20.0)
     
     The commands without linebreaks:
     
     delete all;viewport 900,600;fetch 3nd4, type=pdb,async=0;run ~/Scripts/PyMOLScripts/quat.py;quat 3nd4; show sticks;set stick_radius=0.125;hide everything, name H*;bg_color white;create coorCov, (3nd4_1 and (resi 19 or resi 119 or resi 219 or resi 319 or resi 419 or resi 519 or (resi 3 and name N7)));bond (coorCov//A/NA`19/NA),(coorCov//A/A`3/N7); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`119/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`219/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`319/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`419/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`519/O);distance (3nd4_1 and chain Aand resi 19 and name NA), (3nd4_1 and chain A and resi 519);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 419);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 119);distance (3nd4_1 and chain A and resi 19 and name NA),(3nd4_1 and chain A and resi 319);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 219);show nb_spheres; set nb_spheres_size, .35;distance hbond1,/3nd4_1/1/A/HOH`119/O, /3nd4_1/1/A/A`3/OP2;distance hbond2,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/A`3/OP2;distance hbond3,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/HOH`119/O;distance hbond4,/3nd4_1/1/A/G`4/N7,/3nd4_1/1/A/HOH`91/O;distance hbond5,/3nd4_1/1/A/G`4/O6, /3nd4_1/1/A/HOH`419/O;distance hbond6,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/G`4/OP2;distance hbond7,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/G`2/OP2;distance  hbond9,/3nd4_1/1/A/HOH`419/O,/3nd4_2/2/A/HOH`74/O;distance hbond10,/3nd4_2/2/A/C`15/O2,/3nd4_1/1/A/G`2/N2;distance hbond11, /3nd4_2/2/A/C`15/N3,/3nd4_1/1/A/G`2/N1;distance hbond12,/3nd4_2/2/A/C`15/N4,/3nd4_1/1/A/G`2/O6;distance hbond13, /3nd4_2/2/A/U`14/N3,/3nd4_1/1/A/A`3/N1;distance hbond14,3nd4_2/2/A/U`14/O4,/3nd4_1/1/A/A`3/N6;distance hbond15, /3nd4_2/2/A/C`13/N4,/3nd4_1/1/A/G`4/O6;distance hbond16,/3nd4_2/2/A/C`13/N3, /3nd4_1/1/A/G`4/N1;distance hbond17, /3nd4_1/1/A/G`4/N2,/3nd4_2/2/A/C`13/O2;distance hbond18,/3nd4_1/1/A/G`2/N2,/3nd4_2/2/A/C`15/O2;distance hbond19,/3nd4_1/1/A/HOH`91/O,/3nd4_1/1/A/G`4/OP2;set depth_cue=0;set ray_trace_fog=0;set dash_color, black;set label_font_id, 5;set label_size, 36;set label_position, (0.5, 1.0, 2.0);set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;select carbon, element C; color yellow, carbon;disable carbon;set_view (-0.9,0.34,-0.26,0.33,0.18,-0.93,-0.27,-0.92,-0.28,-0.07,-0.23,-27.83,8.63,19.85,13.2,16.0,31.63,-20.0); 
 
+=======
+    set_view (-0.9,0.34,-0.26,0.33,0.18,-0.93,-0.27,-0.92,
+    -0.28,-0.07,-0.23,-27.83,8.63,19.85,13.2,16.0,31.63,-20.0)
+    
+    Commands without linebreaks:
+    delete all;viewport 900,600;fetch 3nd4, type=pdb,async=0;run ~/Scripts/PyMOLScripts/quat.py;quat 3nd4; show sticks;set stick_radius=0.125;hide everything, name H*;bg_color white;create coorCov, (3nd4_1 and (resi 19 or resi 119 or resi 219 or resi 319 or resi 419 or resi 519 or (resi 3 and name N7)));bond (coorCov//A/NA`19/NA),(coorCov//A/A`3/N7); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`119/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`219/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`319/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`419/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`519/O);distance (3nd4_1 and chain Aand resi 19 and name NA), (3nd4_1 and chain A and resi 519);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 419);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 119);distance (3nd4_1 and chain A and resi 19 and name NA),(3nd4_1 and chain A and resi 319);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 219);show nb_spheres; set nb_spheres_size, .35;distance hbond1,/3nd4_1/1/A/HOH`119/O, /3nd4_1/1/A/A`3/OP2;distance hbond2,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/A`3/OP2;distance hbond3,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/HOH`119/O;distance hbond4,/3nd4_1/1/A/G`4/N7,/3nd4_1/1/A/HOH`91/O;distance hbond5,/3nd4_1/1/A/G`4/O6, /3nd4_1/1/A/HOH`419/O;distance hbond6,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/G`4/OP2;distance hbond7,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/G`2/OP2;distance  hbond9,/3nd4_1/1/A/HOH`419/O,/3nd4_2/2/A/HOH`74/O;distance hbond10,/3nd4_2/2/A/C`15/O2,/3nd4_1/1/A/G`2/N2;distance hbond11, /3nd4_2/2/A/C`15/N3,/3nd4_1/1/A/G`2/N1;distance hbond12,/3nd4_2/2/A/C`15/N4,/3nd4_1/1/A/G`2/O6;distance hbond13, /3nd4_2/2/A/U`14/N3,/3nd4_1/1/A/A`3/N1;distance hbond14,3nd4_2/2/A/U`14/O4,/3nd4_1/1/A/A`3/N6;distance hbond15, /3nd4_2/2/A/C`13/N4,/3nd4_1/1/A/G`4/O6;distance hbond16,/3nd4_2/2/A/C`13/N3, /3nd4_1/1/A/G`4/N1;distance hbond17, /3nd4_1/1/A/G`4/N2,/3nd4_2/2/A/C`13/O2;distance hbond18,/3nd4_1/1/A/G`2/N2,/3nd4_2/2/A/C`15/O2;distance hbond19,/3nd4_1/1/A/HOH`91/O,/3nd4_1/1/A/G`4/OP2;set depth_cue=0;set ray_trace_fog=0;set dash_color, black;set label_font_id, 5;set label_size, 36;set label_position, (0.5, 1.0, 2.0);set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;select carbon, element C; color yellow, carbon;disable carbon;set_view (-0.9,0.34,-0.26,0.33,0.18,-0.93,-0.27,-0.92,-0.28,-0.07,-0.23,-27.83,8.63,19.85,13.2,16.0,31.63,-20.0); 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.reinitialize();
     cmd.viewport('900','600');
@@ -867,6 +1155,7 @@ cmd.extend('NA',NA)
 # ##### Commands applicable to displayed molecules. ##########
 def AO():
     '''
+<<<<<<< HEAD
     DESCRIPTION
     
     Commands to make ambient occlusion image like those in Qutemole. 
@@ -875,6 +1164,14 @@ def AO():
     USAGE
 
     Type 'AO' to execute. Type 'help AO' to see this documentation
+=======
+DESCRIPTION
+    
+    Commands to make ambient occlusion image like those in Qutemole. 
+    
+USAGE
+    Type 'AO' to activate. Type 'help AO' to see this documentation
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
@@ -882,8 +1179,11 @@ def AO():
     Works only with the command line immediately under the command
     history window at the top of the gui.
     
+<<<<<<< HEAD
     The commands with linebreaks:
     
+=======
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     set_color oxygen, [1.0,0.4,0.4];
     set_color nitrogen, [0.5,0.5,1.0];
     remove solvent;
@@ -902,8 +1202,12 @@ def AO():
     unset depth_cue;
     ray
     
+<<<<<<< HEAD
     The commands without linebreaks:
     
+=======
+    Commands without linebreaks:
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     set_color oxygen, [1.0,0.4,0.4];set_color nitrogen, [0.5,0.5,1.0];remove solvent;as spheres;util.cbaw;bg white;set light_count,10;set spec_count,1;set shininess, 10;set specular,0.25;set ambient,0;set direct,0;set reflect,1.5;set ray_shadow_decay_factor, 0.1;set ray_shadow_decay_range, 2;unset depth_cue;ray 
     
     '''
@@ -936,6 +1240,7 @@ def BW():
     to crash if applied to a cartoon representation. Best applied while object is 
     still shown as lines.
     
+<<<<<<< HEAD
     
     USAGE
     
@@ -948,22 +1253,42 @@ def BW():
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+    USAGE
+    Orient struture as desired. Then type 'BW' to execute the function. Type
+    'help BW' to see this documentation printed to the command history window.
+    Select from the command history individual lines of code to build a new
+    script. Select the hortizontal script at the bottom if retaining most of
+    the commands in your new script. Copy and paste onto the comand line
+    below. Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     show cartoon; 
     hide lines; 
     hide nonbonded; 
     # black and white cartoon;
+<<<<<<< HEAD
     # note how the dcomment is on a separate line and not to the right of a command; 
     set ray_trace_mode, 2; 
     bg_color white; 
+=======
+    #note how the dcomment is on a separate line and not to the right of a command; 
+    set ray_trace_mode, 2; 
+    bg_color white; note how comment is on a separate line and not include to the right of a command; 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     set antialias, 2; 
     ray 1600,1600; 
     png test.png
     
     Commands without linebreaks:
+<<<<<<< HEAD
     
     show cartoon; hide lines; hide nonbonded; set ray_trace_mode, 2; # black and white cartoon; bg_color white; set antialias, 2; ray 1600,1600; png test.png
  
+=======
+    show cartoon; hide lines; hide nonbonded; set ray_trace_mode, 2; # black and white cartoon; bg_color white; set antialias, 2; ray 1600,1600; png test.png
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.show_as("cartoon", "all"); 
     cmd.hide('lines'); 
@@ -987,6 +1312,7 @@ def BU():
     
     USAGE
     
+<<<<<<< HEAD
     Type 'BU' to execute. Type 'help BU' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
@@ -1004,6 +1330,18 @@ def BU():
     
     run ~/Scripts/PyMOLScripts/quat.py; quat 
 
+=======
+    Type 'BU' to activate. Type 'help BU' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+
+    Commands without linebreaks:
+    run ~/Scripts/PyMOLScripts/quat.py; quat 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
 #    cmd.alias('aBU', 'run ~/Scripts/PyMOLScripts/quat.py; quat') 
     cmd.do('run /Users/blaine-mooers/Scripts/PyMOLScripts/quat.py')
@@ -1016,6 +1354,7 @@ def CB():
     DESCRIPTION
     
     Loads Jared Sampson's script "colorblindfriendly.py" from the
+<<<<<<< HEAD
     ~/Pymol-script-repo directory. The colorblind-friendly color
     names are printed to the command history window and are available
     for use like standard colors in PyMOL.
@@ -1034,6 +1373,28 @@ def CB():
     
     run ~/Pymol-script-repo/colorblindfriendly.py 
     
+=======
+    ~/Pymol-script-repo directory. The new colorblind-friendly color
+    names are printed to the command history window and are available
+    for use like standard colors in PyMOL.
+
+    Read the header of the script file for more information. Although
+    this script is in my PyMOL plugin collection, it is out of sight
+    and out of mind. The listing of the alias to this script is a
+    reminder to use it. 
+    
+USAGE
+    Type 'CB' to activate. Type 'help CB' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    Commands without linebreaks:
+    run ~/Pymol-script-repo/colorblindfriendly.py 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.run('~/Pymol-script-repo/colorblindfriendly.py')
 cmd.extend('CB',CB)
@@ -1052,6 +1413,7 @@ def CR():
     https://kpwu.wordpress.com/2012/05/24/pymol-different-colors-of-
     nucleic-acid-rings/
     
+<<<<<<< HEAD
     USAGE
 
     Type 'CR' to execute. Type 'help CR' to see this documentation
@@ -1063,6 +1425,16 @@ def CR():
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+USAGE
+    Type 'CR' to activate. Type 'help CR' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     hide everything;
     bg_color white;
@@ -1079,10 +1451,15 @@ def CR():
     color palecyan, rna_U;
     as cartoon 
     
+<<<<<<< HEAD
     The commands without linebreaks:
     
     hide everything;bg_color white;cartoon oval;set cartoon_ring_mode,3;set cartoon_nucleic_acid_color, blue;select rna_A, resn A;select rna_C, resn C;select rna_G, resn G;select rna_U, resn U;color yellow, rna_A;color red, rna_C;color gray40, rna_G;color palecyan, rna_U;as cartoon 
     
+=======
+    Commands without linebreaks:
+    hide everything;bg_color white;cartoon oval;set cartoon_ring_mode,3;set cartoon_nucleic_acid_color, blue;select rna_A, resn A;select rna_C, resn C;select rna_G, resn G;select rna_U, resn U;color yellow, rna_A;color red, rna_C;color gray40, rna_G;color palecyan, rna_U;as cartoon 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.hide('everything')
     cmd.bg_color('white')
@@ -1109,6 +1486,7 @@ def CSS():
     Commands to color ribbon or cartoon representations of proteins by
     secondary structures. 
     
+<<<<<<< HEAD
     USAGE
 
     Type 'CSS' to activateexecute. Type 'help CSS' to see this documentation
@@ -1130,6 +1508,22 @@ def CSS():
     
     as cartoon; color red, ss H; color yellow,ss S; color green, ss L+;
     
+=======
+USAGE
+    Type 'CSS' to activate. Type 'help CSS' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    Commands without linebreaks:
+    as cartoon;
+    color red, ss H;
+    color yellow,ss S;
+    color green, ss L+; 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.show_as('cartoon')
     cmd.color('red', 'ss H')
@@ -1147,6 +1541,7 @@ def CBSS():
     Depends on colorblindfriendly.py. Script assumed to be stored in
     the home directory in ~/Pymol-script-repo.
     
+<<<<<<< HEAD
     USAGE
 
     Type 'CBSS' to execute. Type 'help CBSS' to see this
@@ -1158,6 +1553,16 @@ def CBSS():
     history window at the top of the gui.
         
     The commands with linebreaks:
+=======
+USAGE
+    Type 'CBSS' to activate. Type 'help CBSS' to see this
+    documentation printed to the command history window. Select from
+    the command history individual lines of code to build a new
+    script. Select the hortizontal script at the bottom if retaining
+    most of the commands in your new script. Copy and paste onto the
+    comand line below. Works only with the command line immediately
+    under the command history window at the top of the gui.
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     run ~/Pymol-script-repo/colorblindfriendly.py;
     as cartoon;
@@ -1165,10 +1570,15 @@ def CBSS():
     color cb_yellow,ss S;
     color cb_green, ss L+; 
     
+<<<<<<< HEAD
     The commands without linebreaks:
     
     run ~/Pymol-script-repo/colorblindfriendly.py;as cartoon;color cb_red, ss H;color cb_yellow,ss S;color cb_green, ss L+; 
  
+=======
+    Commands without linebreaks:
+    run ~/Pymol-script-repo/colorblindfriendly.py;as cartoon;color cb_red, ss H;color cb_yellow,ss S;color cb_green, ss L+; 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     
     cmd.run('~/Pymol-script-repo/colorblindfriendly.py')
@@ -1188,9 +1598,14 @@ def DU():
     cartoon so it can be combined with lines, sticks, and
     ball-and-sticks (try BS alias).
     
+<<<<<<< HEAD
     USAGE
 
     Type 'DU' to execute. Type 'help DU' to see this documentation
+=======
+USAGE
+    Type 'DU' to activate. Type 'help DU' to see this documentation
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
@@ -1198,17 +1613,24 @@ def DU():
     Works only with the command line immediately under the command
     history window at the top of the gui.
     
+<<<<<<< HEAD
     Commands with linebreaks:
     
+=======
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     cartoon dumbbell;
     set cartoon_dumbbell_width, 0.2;
     set cartoon_dumbbell_radius, 0.4;
     show cartoon; 
     
     Commands without linebreaks:
+<<<<<<< HEAD
     
     cartoon dumbbell;set cartoon_dumbbell_width, 0.2;set cartoon_dumbbell_radius, 0.4;show cartoon; 
 
+=======
+    cartoon dumbbell;set cartoon_dumbbell_width, 0.2;set cartoon_dumbbell_radius, 0.4;show cartoon; 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.cartoon('dumbbell')
     cmd.set('cartoon_dumbbell_width', '0.2')
@@ -1222,6 +1644,7 @@ def FR():
     DESCRIPTION
     
     Commands to make filled-ring cartoon of nucleic acids. May need to
+<<<<<<< HEAD
     'hide everything' first. Adapted from the script on
     http://www-cryst.bioc.cam.ac.uk/members/zbyszek/figures_pymol. 
     
@@ -1239,6 +1662,21 @@ def FR():
     
     show sticks;
     set cartoon_ring_mode, 3;
+=======
+    'hide everything' first. Adapted from script on
+    http://www-cryst.bioc.cam.ac.uk/members/zbyszek/figures_pymol. 
+    
+USAGE
+    Type 'FR' to activate. Type 'help FR' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    show sticks;set cartoon_ring_mode, 3;
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     set cartoon_ring_finder, 1;
     set cartoon_ladder_mode, 1;
     set cartoon_nucleic_acid_mode, 4;
@@ -1246,9 +1684,13 @@ def FR():
     as cartoon;
     
     Commands without linebreaks:
+<<<<<<< HEAD
     
     show sticks;set cartoon_ring_mode, 3;set cartoon_ring_finder, 1;set cartoon_ladder_mode, 1;set cartoon_nucleic_acid_mode, 4;set cartoon_ring_transparency, 0.5;as cartoon; 
  
+=======
+    show sticks;set cartoon_ring_mode, 3;set cartoon_ring_finder, 1;set cartoon_ladder_mode, 1;set cartoon_nucleic_acid_mode, 4;set cartoon_ring_transparency, 0.5;as cartoon; 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.show('sticks')
     cmd.set('cartoon_ring_mode', '3')
@@ -1264,6 +1706,7 @@ def HH():
     '''
     DESCRIPTION
     
+<<<<<<< HEAD
     Command to hide hydrogen atoms. 
     
     USAGE
@@ -1273,6 +1716,20 @@ def HH():
     
     The command:
     
+=======
+    Commands to hide hydrogen atoms. 
+    
+USAGE
+    Type 'HH' to activate. Type 'help HH' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    Commands without linebreaks:
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     hide everything, name H* 
     
     '''
@@ -1289,17 +1746,25 @@ def PU():
     the B-factors. 50% transparent cartoon so it can be combined with
     lines, sticks, and ball-and-sticks (try BS alias).
     
+<<<<<<< HEAD
     USAGE
 
     Type 'PU' to execute. Type 'help PU' to see this documentation
+=======
+USAGE
+    Type 'PU' to activate. Type 'help PU' to see this documentation
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
     hortizontal script at the bottom if retaining most of the commands
     in your new script. Copy and paste onto the comand line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
+<<<<<<< HEAD
 
     The commands with linebreaks: 
+=======
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     
     cartoon putty;
     set cartoon_ladder_mode, 0;
@@ -1307,10 +1772,15 @@ def PU():
     set cartoon_ring_finder, 0;
     show cartoon 
     
+<<<<<<< HEAD
     The commands without linebreaks: 
     
     cartoon putty;set cartoon_ladder_mode, 0;set cartoon_transparency,0.5;set cartoon_ring_finder, 0;show cartoon 
 
+=======
+    Commands without linebreaks 
+    cartoon putty;set cartoon_ladder_mode, 0;set cartoon_transparency,0.5;set cartoon_ring_finder, 0;show cartoon 
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     '''
     cmd.cartoon('putty')
     cmd.set('cartoon_ladder_mode', '0')

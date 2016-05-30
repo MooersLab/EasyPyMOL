@@ -1,4 +1,5 @@
 from __future__ import division
+<<<<<<< HEAD
 """
 
 
@@ -102,9 +103,63 @@ def roundview(StoredView=0, decimal_places=2, outname="roundedview.txt"):
     The following view setting will be returned without the blackslash.
 
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-155.2,35.1,11.5,9.7,122.3,188.0,-20.0);
+=======
+from pymol import stored, cmd
+
+"""
+DESCRIPTION
+
+Adds the command "roundview" that gets a view (default is 0,
+the current view; you can get a stored view assigned to some
+other digit with the view command) and rounds to two decimal
+places (two digits to the right of the decimal point) the
+viewpoint matrix elements and rewrites the matrix elements
+on a single line with no whitespaces and a semicolon at the
+end. The saved space eases the making of a single line of
+PyMOL commands separated by semicolons. This enables rapid
+and interactive editing of chunks of PyMOL commands. The
+viewpoints are appended to the bottom of a text file in the
+present working directory called "roundedview.txt". The line
+could be easier to copy from this file than from the command
+history window in the external gui. A semicolon with nothing
+to the right of it at the end of a line of grouped commands
+is harmless.
+
+Usage: roundview [view, decimal_places, outname] 
+
+    Note that the values in the [] are optional.
+
+The default values  for the arguments of the function
+are "0,2, roundedview.txt". 
+
+Simple one-line example with roundview.py script in current working
+directory--check by typing 'pwd' and 'ls *.py' on the command line. PyMOL
+should return 'roundview.py' in the lisf of files in the external (top) gui.
+Next, paste the following command on the external (top) commandline, hit
+return, and wait 5-10 seconds:
+
+fetch 1lw9, async=0; run roundview.py; roundview 0,1
+
+
+The following view setting will be returned without the blackslash.
+
+set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-155.2, \
+35.1,11.5,9.7,122.3,188.0,-20.0);
+
+
+
+
+Advanced option:
+
+Copy roundview.py to the folder ~/.pymol/startup and then
+the command will always be accessible. You may have to 
+create these directories. 
+
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     Advanced option:
 
+<<<<<<< HEAD
     Copy roundview.py to the folder ~/.pymol/startup and then
     the command will always be accessible. You may have to 
     create these directories. 
@@ -117,9 +172,23 @@ def roundview(StoredView=0, decimal_places=2, outname="roundedview.txt"):
 
     9 - 11 = origin of rotation relative to the camera
     in camera space
+=======
+0 - 8 = column-major 3x3 matrix that rotates the model axes
+to camera axes 
+
+9 - 11 = origin of rotation relative to the camera
+in camera space
+
+12 - 14 = origin of rotation in model space
+
+15 = front plane distance from the camera
+
+16 = rear plane distance from the camera
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     12 - 14 = origin of rotation in model space
 
+<<<<<<< HEAD
     15 = front plane distance from the camera
 
     16 = rear plane distance from the camera
@@ -131,11 +200,76 @@ def roundview(StoredView=0, decimal_places=2, outname="roundedview.txt"):
     
     #convert the commandline arguments from strings to integers
 
+=======
+version 1.0         26 October 2015
+    Posted in github for first time.
+
+version 1.1         23 November 2015
+    Corrected description of the rounding off the matrix elements.
+    Corrected hard wrapped text the broke the script. 
+    Added example of running program as a horizontal script.
+    Made code pep8 compliant (changed use of blank lines, 
+        removed whitespaces in defualt arguments assignments, 
+        inserted whitespaces after commas in lists, 
+        removed whitespaces at the ends of lines).
+    Added version number.
+
+
+  Copyright Notice
+  ================
+  
+  The PyMOL function source code in this file is copyrighted, but you can
+  freely use and copy it as long as you don't change or remove any of
+  the copyright notices.
+  
+  ----------------------------------------------------------------------
+  This PyMOL script is Copyright (C) 2015 by 
+  Blaine Mooers , PhD <blaine-mooers@ouhsc.edu>
+  University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA
+  
+                         All Rights Reserved
+  
+  Permission to use, copy, modify, distribute, and
+  distribute modified versions of this software and its
+  documentation for any purpose and without fee is hereby
+  granted, provided that the above copyright notice appear
+  in all copies and that both the copyright notice and this
+  permission notice appear in supporting documentation, and
+  that the name(s) of the author(s) not be used in
+  advertising or publicity pertaining to distribution of
+  the software without specific, written prior permission.
+  
+  THE AUTHOR(S) DISCLAIM ALL WARRANTIES WITH REGARD TO THIS
+  SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS.  IN NO EVENT SHALL THE
+  AUTHOR(S) BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+  CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING
+  FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+  CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
+  OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+  SOFTWARE.
+  ----------------------------------------------------------------------
+ """
+ 
+__version__ = 1.1
+
+def roundview(StoredView=0, decimal_places=2, outname="roundedview.txt"):
+    
+    
+    """The function roundview()."""
+    
+    #convert the commandline arguments from strings to integers
+
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
     StoredView = int(StoredView)
     decimal_places = int(decimal_places)
     
     
+<<<<<<< HEAD
     #call the get_view function
+=======
+    #call the get_viewd function
+>>>>>>> 66626fec0bdbc67f9e40919b2593802136660a6d
 
     m = cmd.get_view(StoredView)
 
