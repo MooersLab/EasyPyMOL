@@ -9,11 +9,8 @@ Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches des
 
 Click on icon to see 4 minute introductory video:
 
-# [![File:http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg|thumb|center](http://www.youtube.com/watch?v=XRsAaKq4afs)]
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=watch?v=XRsAaKq4afs
-" target="_blank"><img src="http://img.youtube.com/vi/watch?v=XRsAaKq4afs/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=watch?v=XRsAaKq4afs" target="_blank"><img src="http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="120" height="90" border="5" /></a>
 
 #### Ambient occlusion image of phage T4 lysozyme made with the alias "AO" 
 The 17 commands that are on 17 lines in a traditional vertical script were placed on one line as a horizontal script.
