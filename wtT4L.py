@@ -31,10 +31,9 @@ from pymol import cmd
 __author__ = "Blaine Mooers"
 __copyright__ = "Blaine Mooers, University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA 73104"
 __license__ = "GPL-3"
-__version__ = "1.0.2"
-__credits__ = ["William Beasley","Chiedza Kanyumbu"] 
-# people who reported bug fixes, made suggestions, etc. 
-__date__ = "30 May 2016"
+__version__ = "1.0.3"
+__credits__ = ["William Beasley","Chiedza Kanyumbu"] # people who reported bug fixes, made suggestions, etc. 
+__date__ = "24 July 2016"
 __maintainer__ = "Blaine Mooers"
 __email__ = "blaine-mooers@ouhsc.edu"
 __status__ = "Production" 
@@ -63,38 +62,54 @@ def wtT4L():
     """
     DESCRIPTION
 
-    Creates aliases to compound commands. The compound commands
+    Creates aliases to compound commands or horizontal scripts. The compound commands
     are executed in PyMOL by typing their name. The command 
     wtT4L.py only needs to be run once in a PyMOL session to 
     create the aliases. The aliases disappear upon ending 
     the PyMOL session. The names of the aliases and a short description 
-    of each site is printed to the command history window. The additional
-    script 'site31lables.pml' must be present in the present working
-    directory for alias site31 to work. 
+    of each aliases is printed to the command history window. 
+    
+    LIMITATIONS
+    
+    The site31 alias requires the additional script 'wtT4Llabels.pml' must
+    be present in the same directory as  the wtT4L.py. You may have to
+    give the full path to site31labels.pml if it is not in the present
+    working directory. 
     
     After changing the molecule's orientation, run the program 
     'roundview.py' to obtained a short version of the viewport settings.
 
     USAGE
 
-    run wtT4L.py
-    
+    run wtT4L.py 
+
     Then enter the name of an alias from the list above, for example: 
     
     site11
     
+    To reuse of parts or all of the above commands, copy and paste the commands 
+    onto the command line or into a plain text file. 
+      
+    These commands are sufficient for most editing tasks:  
+    To edit code, positon cursor on command line with left mouse button.  
+    Control-e moves the cursor to the end of the line, even when it is out of view.
+    Control-a moves the cursor to the beginning of the line, even when it is out of view.    
+    Up arrow key recalls last line of commands for editing.
+
+    These commands may not be available on all systems:
+    Shift-control-a selects everything from the right of the cursor to the end of the line.
+    Shift-control-e selects everything to the left of the cursor to the end of the line.
+    Command-f moves the cursor to the end of the current word.   
+    Command-b moves the cursor to the begining of the current word.
+    Control-f moves the cursor to the right by one character.   
+    Control-b moves the cursor to the left by one character.
     """
 cmd.extend('wtT4L',wtT4L)
-    
 print(wtT4L.__doc__)
 cmd.bg_color("white")
 cmd.fetch(code="3fa0", name="wtT4L",state = 0,async='0')
-
 cmd.alias('site11', 'zoom resi 11; preset.technical("wtT4L")') 
-cmd.alias('site31', 'preset.ball_and_stick("wtT4L");@site31labels.pml;set_view (0.31,-0.93,0.21,0.92,0.24,-0.29,0.22,0.28,0.93,-0.09,-0.05,-9.88,37.55,10.06,30.09,20.0,23.82,-20.0);')
+cmd.alias('site31', 'preset.ball_and_stick("wtT4L");@S3_File.pml;set_view (0.31,-0.93,0.21,0.92,0.24,-0.29,0.22,0.28,0.93,-0.09,-0.05,-9.88,37.55,10.06,30.09,20.0,23.82,-20.0);')
 cmd.alias('site96', 'preset.technical("wtT4L");set_view (-0.75,-0.65,0.11,0.62,-0.75,-0.22,0.22,-0.1,0.97,0.0,-0.0,-32.32,29.16,-1.45,6.77,27.32,37.32,-20.0);') 
 cmd.alias('site99', 'preset.ball_and_stick("wtT4L");color bluewhite, i. 99; set_view (-0.24,-0.95,-0.21,0.51,0.07,-0.85,0.83,-0.32,0.46,0.03,-0.5,-5.37,22.35,-18.6,18.83,29.89,37.68,-20.0);') 
 cmd.alias('site145', 'preset.technical("wtT4L");set_view (0.02,-0.63,-0.78,0.37,0.73,-0.56,0.93,-0.27,0.24,0.19,-0.3,-0.0,24.28,2 .24,13.53,15.23,21.26,-20.0);')
-
-
-

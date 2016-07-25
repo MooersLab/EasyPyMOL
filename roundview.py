@@ -1,7 +1,6 @@
 from __future__ import division
 """
 
-
 version 1.0         26 October 2015
     Posted in github for first time.
 
@@ -18,7 +17,10 @@ version 1.1         23 November 2015
 version 1.2         23 May 2016
     Edited copyright notice.
     Corrected typos
-
+    
+version 1.3         23 July 2016
+    Added missing parenthesis at end of file.
+    
 
    Copyright Notice
   ================

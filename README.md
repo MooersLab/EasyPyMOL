@@ -23,7 +23,7 @@ Another image made with a horizontal script.
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="60%"/>
 
 ###Problem: 
-the view port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line becuase the line breaks have to be removed. These settings are often changed many times during the editing of a new scene. 
+the view port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line because the line breaks have to be removed. These settings are often changed many times during the editing of a new scene. 
 
 ```python
 PyMOL>get_view  
@@ -47,11 +47,11 @@ PyMOL>roundview
 set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.66,42.4,56.26,66.53,-20.0);
 ```
     
-Paste the above reformated [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts) in a plain text editor.
+Paste the above reformatted [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts) in a plain text editor.
 
 ###What is the roundview() function?
 
-The Python script roundview.py includes the function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from `roundview()` is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horiontal script. The script can include commnents that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
+The Python script roundview.py includes the function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from `roundview()` is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horizontal script. The script can include comments that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
 
 * **cntrl-a**  moves cursor to the beginning of the line
 * **cntrl-e**  moves cursor to the end of the line
@@ -68,7 +68,7 @@ Tested on:
 * Windows 8 32 bit  running PyMOL 1.7.6.2 and PyMOL 1.7.6.6. 
 * Mac OSX 10.10.5 64 bit running PyMOL 1.5.0.5, 1.7.6.6 (via MacPorts), 1.8.0.5, and 1.8.2.0. 
 
-We tried to make the code backward compatible to PyMOL 1.5. We do not gaurantee that this code works with earlier versions of PyMOL. Nor do we guarantee that the code will not fail in future versions of PyMOL. In PyMOL version 1.6, there were several changes that reduced the backward compatibility. We also do not guarantee that the code will work if you install the code in a location that is different from that described below.
+We tried to make the code backward compatible to PyMOL 1.5. We do not guarantee that this code works with earlier versions of PyMOL. Nor do we guarantee that the code will not fail in future versions of PyMOL. In PyMOL version 1.6, there were several changes that reduced the backward compatibility. We also do not guarantee that the code will work if you install the code in a location that is different from that described below.
 
 ###Instructions
 
@@ -98,7 +98,7 @@ Type the following to see the default format from get_view.
 get_view
 ```
 
-Which ouput looks easier to copy from the command history window and paste onto the command line in PyMOL?
+Which output looks easier to copy from the command history window and paste onto the command line in PyMOL?
 
 #### More advanced ways to install roundview.py
 
@@ -113,7 +113,7 @@ You need the program [Git](https://git-scm.com/) installed on your computer. Git
 
 There are at least four different ways of loading the script into PyMOL:
 
-1. move [`roundview.py`](./roundview.py) to the working directory of pymol. In PyMOL, type 
+1. move [`roundview.py`](./roundview.py) to the working directory. In PyMOL, type 
 
    ```py
     run roundview.py
@@ -197,7 +197,7 @@ fetch 3fa0,async=0;orient;turn z,-90;turn y,-5;turn x,10; hide everything; bg_co
 To apply the canonical view similar to that in [Gassner et al. 2003](http://www.ncbi.nlm.nih.gov/pubmed/12646375), copy and paste the following onto the command line:
   
 ```py
-set_view (-0.18,-0.69,-0.7,0.98,-0.17,-0.09,-0.06,-0.7,0.71,0.0,0.0,-154.87,34.77,11.27,9.52,121.27,188.47,-20.0); ray 1500,1600; png coanonical.png
+set_view (-0.18,-0.69,-0.7,0.98,-0.17,-0.09,-0.06,-0.7,0.71,0.0,0.0,-154.87,34.77,11.27,9.52,121.27,188.47,-20.0); ray 1500,1600; png canonical.png
 ```
   	
 You should get back an image that looks like the following:
@@ -210,7 +210,7 @@ To test some other argument values, copy and paste the following command into Py
 PyMOL>roundview 0,1,firstscene.txt
 ```
 
-Do a `ls *.txt` to list the files in the working diretory. The file "firstscene.txt" should be listed. The default filename is "roundedview.txt". This file is appended with each execution of the roundview command. You may find it easier to copy the set_view line from this text file than from the command history window in PyMOL.
+Do a `ls *.txt` to list the files in the working directory. The file "firstscene.txt" should be listed. The default filename is "roundedview.txt". This file is appended with each execution of the roundview command. You may find it easier to copy the set_view line from this text file than from the command history window in PyMOL.
 
 ## Scripts that use aliases to horizontal scripts. Some aliases contain compact scene settings from roundview().
 
@@ -229,7 +229,7 @@ run ~/Scripts/PyMOLScripts/exam2function.py
 
 Now the aliases `q1,q2, ..., q8` are active.
   
-Type `q1` to execute the alias assoicated with exam quesitno 1.
+Type `q1` to execute the alias associated with exam question 1.
   
 Type `help q1` to print the documentation to the PyMOL command history window. 
 The bottom of the documentation includes the corresponding horizontal script.
@@ -283,7 +283,7 @@ Alias name, description: PDB code, where applicable.
 * **CB**, Define color blind compatible coloring scheme. 
 * **BW**, Make black and white ribbon cartoon on white background.
 * **CSS**, Color ribbon and cartoons by secondary structure: red, green and yellow. 
-* **CBSS**, Color ribbon and cartoons with dcolorblind friendly colors. 
+* **CBSS**, Color ribbon and cartoons with colorblind friendly colors. 
 * **CR**, Commands to make colored filled-ring cartoon of nucleic acids..
 * **FR**, Commands to make filled-ring cartoon of nucleic acids.
 

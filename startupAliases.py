@@ -8,17 +8,19 @@ from __future__ import print_function
         to avoid clutter of the command history window. Source this 
         file from your .pymolrc file on the mac or linux or 
         from your pymolrc.pml file on Windows by adding the command:
-        
-        run ~/Scripts/PyMOLScripts/StartUpAliases.py    
-    
-        Tested on PyMOL versions 1.8.0.5 and 1.5.0.5. 
-        
-        No guarantee is given that this script will work with older
-        or newer versions of PyMOL.
+                           
+        run ~/Scripts/PyMOLScripts/startupAliases.py  
         
         Requires quat.py from the PyMOL Wiki 
         (http://www.pymolwiki.org/index.php/BiologicalUnit/Quat) 
+        
         Store quat.py in ~/Scripts/PyMOLScripts/.
+        
+        Tested on PyMOL versions 1.5.0.5, 1.8.0.5, 1.8.1.0 and 1.8.2.0 
+
+        No guarantee is given that this script will work with older
+        or newer versions of PyMOL.
+
 
   Copyright Notice
   ================
@@ -50,10 +52,10 @@ from pymol import cmd
 __author__ = "Blaine Mooers"
 __copyright__ = "Blaine Mooers, University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA 73104"
 __license__ = "GPL-3"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __credits__ = ["William Beasley","Chiedza Kanyumbu"] 
 # people who reported bug fixes, made suggestions, etc. 
-__date__ = "30 May 2016"
+__date__ = "24 July 2016"
 __maintainer__ = "Blaine Mooers"
 __email__ = "blaine-mooers@ouhsc.edu"
 __status__ = "Production" 
@@ -62,7 +64,7 @@ def SA():
     '''
     DESCRIPTION
     
-    StartUpAliases.py  Copyright (C) 2016  Blaine Mooers. 
+    startupAliases.py  Copyright (C) 2016  Blaine Mooers. 
     This script comes with ABSOLUTELY NO WARRANTY; for details, 
     please see the license file. 
 
@@ -70,7 +72,7 @@ def SA():
     Add this command on one line in  your .pymolrc file 
     (pymolrc.pml on Windows):
     
-    run ~/Scripts/PyMOLScripts/StartUpAliases.py
+    run ~/Scripts/PyMOLScripts/startupAliases.py
 
     Format of list below:
     alias name, description of alias: PDB code (where applicable). 
@@ -100,22 +102,23 @@ def SA():
     BW, Make black and white ribbon cartoon on white background.
     CSS, Color ribbon and cartoons by secondary structure: red, green and yellow. 
     CBSS, Color ribbon and cartoons with colorblind friendly colors. 
-    CR, Commands to make colored filled-ring cartoon of nucleic acids..
-    FR, Commands to make filled-ring cartoon of nucleic acids.
+    CR, Make colored filled-ring cartoon of nucleic acids..
+    FR, Make filled-ring cartoon of nucleic acids.
+    SE, Make SAXS envelope from a bead model.
 
-
-    Type the alias name to execute the commands. The names are case
-    sensitive. 
+    Type the alias name to execute the commands. The names are case sensitive. 
     
     Type 'help <AliasName>' (e.g., help T4L) for a description of the
-    alias and for two sets of commands. The first
-    set of commands has line breaks for easy selection of code fragments. 
-    The second set of commands is one one line for easy copying and 
-    pasting of the entire horizontal script. The commands can be 
-    copied from the command history window and pasted onto the command 
-    line for code reuse. Some aliases require additional scripts. 
+    alias and for two sets of commands. The first set of commands has
+    line breaks for easy selection single lines of commands. The second
+    set of commands is one one line for easy copying and pasting of the
+    entire horizontal script. The commands can be copied from the
+    command history window and pasted onto the command line for code
+    reuse. Some aliases require additional scripts. 
     
     Type 'SA' to refresh the list of aliases.
+    
+    Type 'help rline' to see commands for moving cursor on the command line.
 
     '''
     print(SA.__doc__)
@@ -1318,6 +1321,62 @@ def PU():
     cmd.set('cartoon_ring_finder', '0')
     cmd.show('cartoon')
 cmd.extend('PU',PU)
+
+
+def SE():
+    '''
+    DESCRIPTION
+    
+    Commands to make SAXS envelope from a bead model.
+    
+    USAGE
+
+    Type 'SE' to execute. Type 'help SE' to see this documentation
+    printed to the command history window. Select from the command
+    history individual lines of code to build a new script. Select the
+    hortizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the comand line below.
+    Works only with the command line immediately under the command
+    history window at the top of the gui.
+    
+    Commands with linebreaks:
+    
+    alter all,vdw=4.5;
+    set solvent_radius, 4.3;
+    show surface; 
+    
+    Commands without linebreaks:
+    alter all,vdw=4.5;set solvent_radius, 4.3;show surface; 
+
+    '''
+    cmd.alter('all,vdw=4.5')
+    cmd.set('solvent_radius', '4.3')
+    cmd.show('surface')
+cmd.extend('SE',SE)    
+
+    
+def rline():
+       '''
+    DESCRIPTION
+
+    Navigating the command line with readline commands.
+      
+    These commands are sufficient for most editing tasks:  
+    To edit code, positon cursor on command line with left mouse button.  
+    Control-e moves the cursor to the end of the line, even when it is out of view.
+    Control-a moves the cursor to the beginning of the line, even when it is out of view.    
+    Up arrow key recalls last line of commands for editing.
+
+    These commands may not be available on all systems:
+    Shift-control-a selects everything from the right of the cursor to the end of the line.
+    Shift-control-e selects everything to the left of the cursor to the end of the line.
+    Command-f moves the cursor to the end of the current word.   
+    Command-b moves the cursor to the begining of the current word.
+    Control-f moves the cursor to the right by one character.   
+    Control-b moves the cursor to the left by one character.
+        '''
+cmd.extend("rline",rline)
+    
     
 """ Print the aliases on startup of PyMOL"""
 print(SA.__doc__)
