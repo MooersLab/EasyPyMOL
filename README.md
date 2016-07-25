@@ -81,6 +81,7 @@ Watch this 1 minute video or read on.
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=GnRtEhGvPBQ)
 
 
+
 Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save the file to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is the home directory by entering `pwd` on the command line in PyMOL. Check for presence of roundview.py by entering  `ls *.py` on the command line in PyMOL. 
 
 ```shell
@@ -152,15 +153,15 @@ Type "roundview" on either command line. You should get back the following in th
    
 ## Link to roundview.py installation video for MacPyMOL:
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=XTwwWgwj4z0)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=XTwwWgwj4z0)
 
 ## Link to roundview.py installation video for PyMOL on Windows:
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XTwwWgwj4z0/0.jpg)](http://www.youtube.com/watch?v=Dh2ihD5mIxY)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](https://www.youtube.com/watch?v=C0NWphiTEYE)
 
 ## Link to roundview.py installation video for Linux and PyMOLHyridX11 for Mac:
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=XQWQzq48DeA/0.jpg)](http://www.youtube.com/watch?v=XQWQzq48DeA)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=XQWQzq48DeA)
 
 
 #### How to run
