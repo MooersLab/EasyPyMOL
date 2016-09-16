@@ -26,10 +26,6 @@ The 17 commands that are on 17 lines in a traditional vertical script were place
 <img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="75%"/> 
 
 
-
-
-
-
 ####  Ribbon diagram of the above molecule made with the alias "T4L" 
 Another image made with a horizontal script.
 
@@ -93,6 +89,16 @@ Click on image immediately below to watch 1 minute video or read on.
 
 
 Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save the file to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is the home directory by entering `pwd` on the command line in PyMOL. Check for presence of roundview.py by entering  `ls *.py` on the command line in PyMOL. 
+
+Note that the scripts were developed on a Mac and most have utf-8 encoding instead of ascii encoding as expected on Windows. Open the script 
+file in a plain text editor that allows the selection of encoding (e.g., gedit). The following line placed is at the top of the script allows
+the python interpreter in PyMOL to read utf-8 encoded files.
+ 
+  #-*- coding: utf-8 -*-
+
+specifies the encoding so these scripts will run on windows. If the script lacks this line, it was not needed and the file
+can be saved with ascii encoding for running on Windows.
+
 
 ```shell
 ls *.py
