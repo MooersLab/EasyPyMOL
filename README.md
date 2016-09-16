@@ -15,13 +15,19 @@ GitHub and installing them on Windows, Linux, mac PyMOLX11 and Mac PyMOL:
 [![ScreenShot](http://i3.ytimg.com/vi/XRsAaKq4afs/hqdefault.jpg)](https://www.youtube.com/watch?v=XRsAaKq4afs)
 
 
-Video Highlights for Protein Science methods paper: Simplifying and enhancing the use of PyMOL with horizontal scripts (5:44 minutes)
+Video Highlights for Protein Science methods paper: Simplifying and enhancing the use of PyMOL with horizontal scripts.
 ### Click on the image immediately below to start video (5:43 min).
 [![ScreenShot](http://i3.ytimg.com/vi/96lSGbrcnyw/hqdefault.jpg)](http://www.youtube.com/watch?v=96lSGbrcnyw)
 
 
 #### Ambient occlusion image of phage T4 lysozyme made with the alias "AO" 
 The 17 commands that are on 17 lines in a traditional vertical script were placed on one line as a horizontal script.
+
+<img src="https://cloud.githubusercontent.com/assets/15176203/13590209/9ad0758c-e4a3-11e5-995a-0ed5fb2cc88f.png" width="75%"/> 
+
+
+
+
 
 
 ####  Ribbon diagram of the above molecule made with the alias "T4L" 
