@@ -1,4 +1,7 @@
 from __future__ import division
+from __future__ import print_function
+# -*- coding: utf-8 -*-
+
 """
 
 version 1.0         26 October 2015

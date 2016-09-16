@@ -4,13 +4,26 @@
 [![DOI](https://zenodo.org/badge/20847/MooersLab/EasyPyMOL.svg)](https://zenodo.org/badge/latestdoi/20847/MooersLab/EasyPyMOL)
 
 Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in the manuscript:
-[Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) (*submitted*).
-"Easier use of PyMOL with horizontal scripts". 
+[Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) 
+"Simplifying and enhancing the use of PyMOL with horizontal scripts" published in the September 2016 issue of Protein Science. 
 
-Click on icon to see 4 minute introductory video:
+Click on icon to see 4 minute introductory video. Scroll down to find tutorial videos about downloading the scripts from 
+GitHub and installing them on Windows, Linux, mac PyMOLX11 and Mac PyMOL:
 
-<a href="https://www.youtube.com/watch?v=XRsAaKq4afs" target="_blank"><img src="http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg" | alt="IMAGE ALT TEXT HERE" width="120" height="90" border="5" /></a>
+<html>
+ <body>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/XRsAaKq4afs" frameborder="0" allowfullscreen></iframe>
+ </body>
+</html>
 
+
+Video Highlights for Protein Science methods paper: Simplifying and enhancing the use of PyMOL with horizontal scripts (5:44 minutes)
+
+<html>
+ <body>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/96lSGbrcnyw" frameborder="0" allowfullscreen></iframe>
+ </body>
+</html>
 
 
 #### Ambient occlusion image of phage T4 lysozyme made with the alias "AO" 
@@ -78,7 +91,12 @@ We tried to make the code backward compatible to PyMOL 1.5. We do not guarantee 
 
 Watch this 1 minute video or read on. 
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=GnRtEhGvPBQ)
+<html>
+ <body>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GnRtEhGvPBQ" frameborder="0" allowfullscreen></iframe> 
+ </body>
+</html>
+
 
 
 
@@ -151,17 +169,43 @@ Type "roundview" on either command line. You should get back the following in th
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
    ```
    
-## Link to roundview.py installation video for MacPyMOL:
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=XTwwWgwj4z0)
 
 ## Link to roundview.py installation video for PyMOL on Windows:
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](https://www.youtube.com/watch?v=C0NWphiTEYE)
+
+<html>
+ <body>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/C0NWphiTEYE" frameborder="0" allowfullscreen></iframe>
+  width="560" height="100" frameborder="0" allowfullscreen></iframe>
+ </body>
+</html>
+
+Note that the scripts were developed on a Mac and have utf-8 encoding instead of ascii encoding as expected on Windows. Open the script 
+file in a plain text editor that allows the selection of encoding like gedit. The line at the top of the script with no whitespace between
+the hashmark and the first dash
+ 
+  # -*- coding: utf-8 -*-
+
+specifies the encoding so these scripts will run on windows. If the script lacks this line, it is not needed and the file
+can be saved with ascii encoding for running on Windows.
 
 ## Link to roundview.py installation video for Linux and PyMOLHyridX11 for Mac:
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/watch?v=GnRtEhGvPBQ/0.jpg)](http://www.youtube.com/watch?v=XQWQzq48DeA)
+<html>
+ <body>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/XQWQzq48DeA" frameborder="0" allowfullscreen></iframe>
+  width="560" height="100" frameborder="0" allowfullscreen></iframe>
+ </body>
+</html>
+
+## Link to roundview.py installation video for MacPyMOL:
+
+<html>
+ <body>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XTwwWgwj4z0?list=PLewuoe2IthVHaPVmdXAFfWZnqCvhoMT-I" frameborder="0" allowfullscreen></iframe>  width="560" height="100" frameborder="0" allowfullscreen></iframe>
+ </body>
+</html>
+
 
 
 #### How to run
