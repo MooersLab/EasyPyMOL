@@ -90,15 +90,9 @@ Click on image immediately below to watch 1 minute video or read on.
 
 Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save the file to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is the home directory by entering `pwd` on the command line in PyMOL. Check for presence of roundview.py by entering  `ls *.py` on the command line in PyMOL. 
 
-Note that the scripts were developed on a Mac and most have utf-8 encoding instead of ascii encoding as expected on Windows. Open the script 
-file in a plain text editor that allows the selection of encoding (e.g., gedit). The following line placed is at the top of the script allows
-the python interpreter in PyMOL to read utf-8 encoded files.
- 
+Note that the scripts were developed on a Mac and most have utf-8 encoding instead of ascii encoding as expected on Windows. A second set of script files were opened in Sublime Text and saved with Western encoding for Windows and with the filename modified with Windows appended.
+The line below in the scripts for Mac and Linux instructs the Python interpreter to read the file with utf-8 encoding. 
   #-*- coding: utf-8 -*-
-
-specifies the encoding so these scripts will run on windows. If the script lacks this line, it was not needed and the file
-can be saved with ascii encoding for running on Windows.
-
 
 ```shell
 ls *.py
@@ -176,13 +170,9 @@ Type "roundview" on either command line. You should get back the following in th
 [![ScreenShot](http://i3.ytimg.com/vi/C0NWphiTEYE/hqdefault.jpg)](https://www.youtube.com/watch?v=C0NWphiTEYE)
 
 
-Note that the scripts were developed on a Mac and have utf-8 encoding instead of ascii encoding as expected on Windows. Open the script 
-file in a plain text editor that allows the selection of encoding (e.g., gedit). The following line is at the top of the script.
- 
+Note that the scripts were developed on a Mac and most have utf-8 encoding instead of ascii encoding as expected on Windows. A second set of script files were opened in Sublime Text and saved with Western encoding for Windows and with the filename modified with Windows appended.
+The line below in the scripts for Mac and Linux instructs the Python interpreter to read the file with utf-8 encoding. 
   #-*- coding: utf-8 -*-
-
-specifies the encoding so these scripts will run on windows. If the script lacks this line, it is not needed and the file
-can be saved with ascii encoding for running on Windows.
 
 
 ## roundview.py installation video for PyMOL on Linux and PyMOLX11Hybrid on Mac  (3:24 minutes):
