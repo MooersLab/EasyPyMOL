@@ -4,7 +4,7 @@
 [![DOI](https://zenodo.org/badge/20847/MooersLab/EasyPyMOL.svg)](https://zenodo.org/badge/latestdoi/20847/MooersLab/EasyPyMOL)
 
 Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in the manuscript:
-[Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-) 
+[Blaine Mooers](http://tinyurl.com/ouhscMooers) 
 "Simplifying and enhancing the use of PyMOL with horizontal scripts" published in the September 2016 issue of Protein Science. 
 
 See 4 minute introductory video. Scroll down to find tutorial videos about downloading the scripts from 
