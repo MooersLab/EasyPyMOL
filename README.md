@@ -31,7 +31,7 @@ Another image made with a horizontal script.
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="60%"/>
 
-###Problem:
+### Problem:
 the view port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line because the line breaks have to be removed. These settings are often changed many times during the editing of a new scene.
 
 ```python
@@ -58,18 +58,18 @@ set_view(-0.83,0.4,0.38,-0.26,-0.89,0.36,0.49,0.2,0.85,0.0,0.0,-61.4,-46.25,-4.6
 
 Paste the above reformatted [`set_view()`](http://pymolwiki.org/index.php/Set_View) command onto the PyMOL [command line](http://pymolwiki.org/index.php/Command_Line_Options) in the external gui or into a [script](http://www.pymolwiki.org/index.php/Running_Scripts) in a plain text editor.
 
-###What is the roundview() function?
+### What is the `roundview()` function?
 
 The Python script roundview.py includes the function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from `roundview()` is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horizontal script. The script can include comments that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
 
 * **cntrl-a**  moves cursor to the beginning of the line
 * **cntrl-e**  moves cursor to the end of the line
-* **shift-cntrl-a**  selects everthing to from the cursor to the beginning of the line
-* **shift-cntrl-e**  selects everthing to from the cursor to the end of the line
+* **shift-cntrl-a**  selects everything to from the cursor to the beginning of the line
+* **shift-cntrl-e**  selects everything to from the cursor to the end of the line
 * **command-f**  move forward by one word
 * **commend-b**  move backward by one word
 
-###Requirements
+### Requirements
 
 Requires a molecular object loaded into an interactive session of PyMOL. Does not require any modules other than two in PyMOL. Should work on all versions of PyMOL.
 Tested on:
@@ -79,9 +79,9 @@ Tested on:
 
 We tried to make the code backward compatible to PyMOL 1.5. We do not guarantee that this code works with earlier versions of PyMOL. Nor do we guarantee that the code will not fail in future versions of PyMOL. In PyMOL version 1.6, there were several changes that reduced the backward compatibility. We also do not guarantee that the code will work if you install the code in a location that is different from that described below.
 
-###Instructions
+### Instructions
 
-####Quick start instructions for beginning users of Github
+#### Quick start instructions for beginning users of Github
 
 Click on image immediately below to watch 1 minute video or read on.
 
@@ -126,7 +126,7 @@ You need the program [Git](https://git-scm.com/) installed on your computer. Git
 
 There are at least four different ways of loading the script into PyMOL:
 
-1. move [`roundview.py`](./roundview.py) to the working directory. In PyMOL, type
+1. move [`roundview.py`](./roundview.py) to the working directory. Then in PyMOL, type
 
    ```py
     run roundview.py
@@ -135,7 +135,7 @@ Please note that the `run` command just loads the script into PyMOL. It does not
 
 2. load [`roundview.py`](./roundview.py) with the plugin manager (see plugin pulldown) in PyMOL
 
-3. copy [`roundview.py`](./roundview.py) to a safe folder that will not be deleted when you delete PyMOL. I use `~/Scripts/PyMOLScripts/`. Then load roundview() into PyMOL using method 1 or 2.
+3. copy [`roundview.py`](./roundview.py) to a safe folder that will not be deleted when you delete PyMOL. I use `~/Scripts/PyMOLScripts/`. Then load `roundview()` into PyMOL using method 1 or 2.
 
 4. create or edit the hidden text file `.pymolrc` (named `pymolrc.pml` and not hidden on Windows) in the home directory so that it includes the following lines so that `roundview.py` is always loaded upon startup. This option also works without the first two lines.
    ```py
@@ -156,7 +156,7 @@ Restart PyMOL. You should see something like the following in the command histor
     PyMOL>run /Users/blaine-mooers/Scripts/Scripts_PyMOL/roundview.py
    ```
 
-Type "roundview" on either command line. You should get back the following in the command history window if no molecule is loaded:
+Type `roundview` on either command line. You should get back the following in the command history window if no molecule is loaded:
    ```py
     set_view (1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,-50.0,0.0,0.0,0.0,40.0,100.0,-20.0);
    ```
@@ -195,17 +195,18 @@ The line below in the scripts for Mac and Linux instructs the Python interpreter
 
 After loading a pdb file and setting up the molecular scene, type on a command line in PyMOL:
 
-   ```
-    PyMOL>roundview
-   ```
+```
+PyMOL>roundview
+```
 
 ##### How to get help
 
 Type the following on a command line in PyMOL
 
-   ```
-    PyMOL> help roundview
-   ```
+ ```
+  PyMOL> help roundview
+ ```
+
 Something like the following should be printed to the command history window:
 
 Usage: `roundview [view, decimal places, outname]`
@@ -241,26 +242,23 @@ PyMOL>roundview 0,1,firstscene.txt
 
 Do a `ls *.txt` to list the files in the working directory. The file "firstscene.txt" should be listed. The default filename is "roundedview.txt". This file is appended with each execution of the roundview command. You may find it easier to copy the set_view line from this text file than from the command history window in PyMOL.
 
-## Scripts that use aliases to horizontal scripts. Some aliases contain compact scene settings from roundview().
+## Scripts that use aliases to horizontal scripts. Some aliases contain compact scene settings from `roundview()`.
 
 ### Exam2function.py
 
-  Defines aliases `q1-q8` for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems course. Each alias is
-  is mapped to a number of commands.  
+is mapped to a number of commands.  
 
-  Create `~/Scripts/PyMOLScripts` and store the script in this subfolder.
+1. Create `~/Scripts/PyMOLScripts` and store the script in this subfolder.
 
-  Enter on the command line in PyMOL the following command:
+1. Enter on the command line in PyMOL the following command:
 
-```  
-run ~/Scripts/PyMOLScripts/exam2function.py
-```
+    ```  
+    run ~/Scripts/PyMOLScripts/exam2function.py
+    ```
 
-Now the aliases `q1,q2, ..., q8` are active.
+1. Type `q1` to execute the alias associated with exam question 1.
 
-Type `q1` to execute the alias associated with exam question 1.
-
-Type `help q1` to print the documentation to the PyMOL command history window.
+1. Type `help q1` to print the documentation to the PyMOL command history window.
 The bottom of the documentation includes the corresponding horizontal script.
 All or parts of the horizontal script can be copied from the command history
 window for reuse of the code in another horizontal script or a traditional
@@ -271,18 +269,19 @@ Tested on PyMOL versions 1.5.0.5, 1.7.7.2 (from macports), and 1.8.0.5.
 
 ### StartupAliases.py
 
-Copy to ~/Scripts/PyMOLScripts/.
+1. Copy to ~/Scripts/PyMOLScripts/.
 
-Add this command on one line in your .pymolrc file (pymolrc.pml on Windows):
+1. Add this command on one line in your .pymolrc file (pymolrc.pml on Windows):
 
-```    
-run ~/Scripts/PyMOLScripts/StartUpAliases.py
-```
-Now these aliases will be available whenever you startup PyMOL.
+    ```shell  
+    run ~/Scripts/PyMOLScripts/StartUpAliases.py
+    ```
 
-Type the `alias <name>` to execute it.
+    Now these aliases will be available whenever you startup PyMOL.
 
-Type `help alias name` to see the documentation, which includes a vertical list of the commands mapped to the alias to ease the copying of isolated commands from the command history window during code reuse. The corresponding horizontal script without line breaks is also printed. It can be selected in the command history window and pasted onto the command line.
+1. Type the `alias <name>` to execute it.
+
+1. Type `help alias name` to see the documentation, which includes a vertical list of the commands mapped to the alias to ease the copying of isolated commands from the command history window during code reuse. The corresponding horizontal script without line breaks is also printed. It can be selected in the command history window and pasted onto the command line.
 
 Format of list below:
 
@@ -336,8 +335,8 @@ USAGE
     Type 'AO' to execute. Type 'help AO' to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
-    hortizontal script at the bottom if retaining most of the commands
-    in your new script. Copy and paste onto the comand line below.
+    horizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window in the top (external) gui.
 
@@ -404,8 +403,8 @@ Type 'help NA' to see a very long script mapped to two a letter command.
     Type `NA` to activate. Type `help NA` to see this documentation
     printed to the command history window. Select from the command
     history individual lines of code to build a new script. Select the
-    hortizontal script at the bottom if retaining most of the commands
-    in your new script. Copy and paste onto the comand line below.
+    horizontal script at the bottom if retaining most of the commands
+    in your new script. Copy and paste onto the command line below.
     Works only with the command line immediately under the command
     history window at the top of the gui.
 
@@ -469,7 +468,7 @@ Type 'help NA' to see a very long script mapped to two a letter command.
     delete all;viewport 900,600;fetch 3nd4, type=pdb,async=0;run ~/Scripts/PyMOLScripts/quat.py;quat 3nd4; show sticks;set stick_radius=0.125;hide everything, name H*;bg_color white;create coorCov, (3nd4_1 and (resi 19 or resi 119 or resi 219 or resi 319 or resi 419 or resi 519 or (resi 3 and name N7)));bond (coorCov//A/NA`19/NA),(coorCov//A/A`3/N7); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`119/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`219/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`319/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`419/O); bond (coorCov//A/NA`19/NA),(coorCov//A/HOH`519/O);distance (3nd4_1 and chain Aand resi 19 and name NA), (3nd4_1 and chain A and resi 519);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 419);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 119);distance (3nd4_1 and chain A and resi 19 and name NA),(3nd4_1 and chain A and resi 319);distance (3nd4_1 and chain A and resi 19 and name NA), (3nd4_1 and chain A and resi 219);show nb_spheres; set nb_spheres_size, .35;distance hbond1,/3nd4_1/1/A/HOH`119/O, /3nd4_1/1/A/A`3/OP2;distance hbond2,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/A`3/OP2;distance hbond3,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/HOH`119/O;distance hbond4,/3nd4_1/1/A/G`4/N7,/3nd4_1/1/A/HOH`91/O;distance hbond5,/3nd4_1/1/A/G`4/O6, /3nd4_1/1/A/HOH`419/O;distance hbond6,/3nd4_1/1/A/HOH`91/O, /3nd4_1/1/A/G`4/OP2;distance hbond7,/3nd4_1/1/A/HOH`319/O, /3nd4_1/1/A/G`2/OP2;distance  hbond9,/3nd4_1/1/A/HOH`419/O,/3nd4_2/2/A/HOH`74/O;distance hbond10,/3nd4_2/2/A/C`15/O2,/3nd4_1/1/A/G`2/N2;distance hbond11, /3nd4_2/2/A/C`15/N3,/3nd4_1/1/A/G`2/N1;distance hbond12,/3nd4_2/2/A/C`15/N4,/3nd4_1/1/A/G`2/O6;distance hbond13, /3nd4_2/2/A/U`14/N3,/3nd4_1/1/A/A`3/N1;distance hbond14,3nd4_2/2/A/U`14/O4,/3nd4_1/1/A/A`3/N6;distance hbond15, /3nd4_2/2/A/C`13/N4,/3nd4_1/1/A/G`4/O6;distance hbond16,/3nd4_2/2/A/C`13/N3, /3nd4_1/1/A/G`4/N1;distance hbond17, /3nd4_1/1/A/G`4/N2,/3nd4_2/2/A/C`13/O2;distance hbond18,/3nd4_1/1/A/G`2/N2,/3nd4_2/2/A/C`15/O2;distance hbond19,/3nd4_1/1/A/HOH`91/O,/3nd4_1/1/A/G`4/OP2;set depth_cue=0;set ray_trace_fog=0;set dash_color, black;set label_font_id, 5;set label_size, 36;set label_position, (0.5, 1.0, 2.0);set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;set label_color, black;set dash_gap, 0.2;set dash_width, 2.0;set dash_length, 0.2;select carbon, element C; color yellow, carbon;disable carbon;set_view (-0.9,0.34,-0.26,0.33,0.18,-0.93,-0.27,-0.92,-0.28,-0.07,-0.23,-27.83,8.63,19.85,13.2,16.0,31.63,-20.0);
 
 
-Type `NA` to get the resulting image of a sodium cation bound with inner sphere coordination to the N7 nitrogen of an adenine and to five waters. The sodium is in the major groove of a double-strande RNA molecule (PDB-ID 3nd4). The dashed lines represent hydrogen bonds. The numbers are distances in angstroms.
+Type `NA` to get the resulting image of a sodium cation bound with inner sphere coordination to the N7 nitrogen of an adenine and to five waters. The sodium is in the major groove of a double-stranded RNA molecule (PDB-ID 3nd4). The dashed lines represent hydrogen bonds. The numbers are distances in angstroms.
 
 ![naadenine](https://cloud.githubusercontent.com/assets/15176203/13609887/853536a4-e520-11e5-9978-9ea1da4f0884.png)
 
@@ -479,6 +478,6 @@ Reference, License, Copyright, and Date of last update
 
 * Mooers, B. H. M. (submitted) Easier use of PyMOL with horizontal scripts.
 * GNU General Public License ([GPL-3](http://www.gnu.org/licenses/gpl-3.0.en.html))
-* (C) [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2016
+* (C) [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2017
 * This work was supported by NIH grants RO1 AI088011 (PI: Mooers) from the National Institute of Allergy and Infectious Diseases and ROP20 GM103640 (PI: Ann West), a Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health.  
 * Updated 30 October 2017
