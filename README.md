@@ -246,7 +246,7 @@ Do a `ls *.txt` to list the files in the working directory. The file "firstscene
 
 ### Exam2function.py
 
-is mapped to a number of commands.  
+Defines aliases `q1-q8` for questions 1-8 from exam 2 of the OUHSC Macromolecular Systems [course](https://apps.ouhsc.edu/studentinfo/Courses.aspx?College=GRAD). Each alias is mapped to a number of commands.  
 
 1. Create `~/Scripts/PyMOLScripts` and store the script in this subfolder.
 
