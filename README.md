@@ -507,5 +507,6 @@ Related Repos
 - [orgpymolpysnips](https://github.com/MooersLab/orgpymolpysnips)
 - [rstudiopymolpysnips](https://github.com/MooersLab/rstudiopymolpysnips)
 - [taggedpymolpysnips](https://github.com/MooersLab/taggedpymolpysnips)
+- [jupyterlabpymolpysnips](https://github.com/MooersLab/jupyterlabpymolpysnips)
 - [colabOpenSourcePyMOLpySnips](https://github.com/MooersLab/colabOpenSourcePyMOLpySnips)
 - [colabPyMOLpySnips](https://github.com/MooersLab/colabPyMOLpySnips)
