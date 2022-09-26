@@ -498,3 +498,11 @@ Bibtex entry
   publisher={Wiley Online Library}
 }
 ```
+
+Related Repos
+-------------
+
+- [pymolshortcuts](https://github.com/MooersLab/pymolshortcuts)
+- [pymolsnips]()
+-
+-
