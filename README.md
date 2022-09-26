@@ -504,5 +504,8 @@ Related Repos
 
 - [pymolshortcuts](https://github.com/MooersLab/pymolshortcuts)
 - [pymolsnips](https://github.com/MooersLab/pymolsnips)
-- [orgpymolpysnips](https://github.com/MooersLab/pymolsnips)
+- [orgpymolpysnips](https://github.com/MooersLab/orgpymolpysnips)
 - [rstudiopymolpysnips](https://github.com/MooersLab/rstudiopymolpysnips)
+- []()
+- []()
+- []()
