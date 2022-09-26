@@ -3,12 +3,11 @@
 
 [![DOI](https://zenodo.org/badge/20847/MooersLab/EasyPyMOL.svg)](https://zenodo.org/badge/latestdoi/20847/MooersLab/EasyPyMOL)
 
-Welcome to the `EasyPyMOL` repository, which implements the PyMOL approaches described in the manuscript:
-[Blaine Mooers](http://tinyurl.com/ouhscMooers)
+Welcome to the `EasyPyMOL` repository, which implements horizontal scripting with PyMOL described in the manuscript:
 "[Simplifying and enhancing the use of PyMOL with horizontal scripts](http://onlinelibrary.wiley.com/doi/10.1002/pro.2996/abstract;jsessionid=3BFE5B68AD44844F55AAE6E273D88375.f02t03)" published in the September 2016 issue of Protein Science.
 
-See 4 minute introductory video. Scroll down to find tutorial videos about downloading the scripts from
-GitHub and installing them on Windows, Linux, mac PyMOLX11 and Mac PyMOL:
+See this 4-minute introductory video. 
+Scroll down to find tutorial videos about downloading the scripts from GitHub and installing them on Windows, Linux, mac PyMOLX11 and Mac PyMOL:
 
 ### Click on the image immediately below to start video (4:17 min).
 
