@@ -476,8 +476,22 @@ Type `NA` to get the resulting image of a sodium cation bound with inner sphere 
 Reference, License, Copyright, and Date of last update
 --------------------------------------------------------------------------------
 
-* Mooers, B. H. M. (submitted) Easier use of PyMOL with horizontal scripts.
+* Mooers, B. H. (2016). Simplifying and enhancing the use of PyMOL with horizontal scripts. *Protein Science*, 25(10), 1873-1882.
 * GNU General Public License ([GPL-3](http://www.gnu.org/licenses/gpl-3.0.en.html))
-* (C) [Blaine Mooers](http://www.oumedicine.com/department-of-biochemistry-and-molecular-biology/faculty/blaine-mooers-ph-d-), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2017
+* (C) [Blaine Mooers](https://basicsciences.ouhsc.edu/bmb/Faculty/bio_details/mooers-blaine-hm-phd), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2017
 * This work was supported by NIH grants RO1 AI088011 (PI: Mooers) from the National Institute of Allergy and Infectious Diseases and ROP20 GM103640 (PI: Ann West), a Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health.  
-* Updated 30 October 2017
+* Updated 25 September 2022
+
+
+```bibtex
+@article{mooers2016simplifying,
+  title={Simplifying and enhancing the use of PyMOL with horizontal scripts},
+  author={Mooers, Blaine HM},
+  journal={Protein Science},
+  volume={25},
+  number={10},
+  pages={1873--1882},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+```
