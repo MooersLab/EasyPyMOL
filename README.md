@@ -510,3 +510,4 @@ Related Repos
 - [jupyterlabpymolpysnips](https://github.com/MooersLab/jupyterlabpymolpysnips)
 - [colabOpenSourcePyMOLpySnips](https://github.com/MooersLab/colabOpenSourcePyMOLpySnips)
 - [colabPyMOLpySnips](https://github.com/MooersLab/colabPyMOLpySnips)
+- [PyMOLwallhangings](https://github.com/MooersLab/PyMOLwallhangings)
