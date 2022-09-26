@@ -483,6 +483,9 @@ Reference, License, Copyright, and Date of last update
 * Updated 25 September 2022
 
 
+Bibtex entry
+------------
+
 ```bibtex
 @article{mooers2016simplifying,
   title={Simplifying and enhancing the use of PyMOL with horizontal scripts},
