@@ -1,3 +1,7 @@
+![Version](https://img.shields.io/static/v1?label=EasyPyMO&message=0.2&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 # PyMOL made easier with horizontal scripting
 *Script to facilitate the making of horizontal scripts*
 
@@ -9,13 +13,13 @@ Welcome to the `EasyPyMOL` repository, which implements horizontal scripting wit
 See this 4-minute introductory video. 
 Scroll down to find tutorial videos about downloading the scripts from GitHub and installing them on Windows, Linux, mac PyMOLX11 and Mac PyMOL:
 
-### Click on the image immediately below to start video (4:17 min).
+### Click on the image immediately below to start the video (4:17 min).
 
 [![ScreenShot](http://i3.ytimg.com/vi/XRsAaKq4afs/hqdefault.jpg)](https://www.youtube.com/watch?v=XRsAaKq4afs)
 
 
 Video Highlights for Protein Science methods paper: Simplifying and enhancing the use of PyMOL with horizontal scripts.
-### Click on the image immediately below to start video (5:43 min).
+### Click on the image immediately below to start the video (5:43 min).
 [![ScreenShot](http://i3.ytimg.com/vi/96lSGbrcnyw/hqdefault.jpg)](http://www.youtube.com/watch?v=96lSGbrcnyw)
 
 
@@ -26,12 +30,12 @@ The 17 commands that are on 17 lines in a traditional vertical script were place
 
 
 ####  Ribbon diagram of the above molecule made with the alias "T4L"
-Another image made with a horizontal script.
+Another image is made with a horizontal script.
 
 <img src="https://cloud.githubusercontent.com/assets/15176203/10561743/5f59bb82-74fd-11e5-828c-dbe1dbb2c648.png" width="60%"/>
 
 ### Problem:
-the view port settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line because the line breaks have to be removed. These settings are often changed many times during the editing of a new scene.
+the viewport settings returned on seven lines with line continuation symbols from the command [`get_view()`](http://pymolwiki.org/index.php/Get_View) in [PyMOL](https://www.pymol.org/) are too hard to copy and paste onto the command line because the line breaks have to be removed. These settings are often changed many times while editing a new scene.
 
 ```python
 PyMOL>get_view  
@@ -61,8 +65,8 @@ Paste the above reformatted [`set_view()`](http://pymolwiki.org/index.php/Set_Vi
 
 The Python script roundview.py includes the function `roundview()` that reformats the viewing port settings from seven rows to one row. The more compact format from `roundview()` is easy to copy and paste onto the command line. Other commands that are separated by semicolons can be added to the command line along with the settings. This defines a horizontal script. The script can include comments that are isolated by semicolons. The horizontal script can be edited and tested repeatedly within PyMOL for many cycles without using an external text editor. This saves time during the development of a new molecular scene. The cursor can be moved around quickly on the command line with the readline commands:
 
-* **cntrl-a**  moves cursor to the beginning of the line
-* **cntrl-e**  moves cursor to the end of the line
+* **cntrl-a**  moves the cursor to the beginning of the line
+* **cntrl-e**  moves the cursor to the end of the line
 * **shift-cntrl-a**  selects everything to from the cursor to the beginning of the line
 * **shift-cntrl-e**  selects everything to from the cursor to the end of the line
 * **command-f**  move forward by one word
@@ -76,20 +80,20 @@ Tested on:
 * Windows 8 32 bit  running PyMOL 1.7.6.2 and PyMOL 1.7.6.6.
 * Mac OSX 10.10.5 64 bit running PyMOL 1.5.0.5, 1.7.6.6 (via MacPorts), 1.8.0.5, and 1.8.2.0.
 
-We tried to make the code backward compatible to PyMOL 1.5. We do not guarantee that this code works with earlier versions of PyMOL. Nor do we guarantee that the code will not fail in future versions of PyMOL. In PyMOL version 1.6, there were several changes that reduced the backward compatibility. We also do not guarantee that the code will work if you install the code in a location that is different from that described below.
+We tried to make the code backward compatible with PyMOL 1.5. However, we do not guarantee that this code works with earlier versions of PyMOL or that it will not fail in future versions. Several changes in PyMOL version 1.6 reduced the backward compatibility. We also do not guarantee that the code will work if you install it in a location other than that described below.
 
 ### Instructions
 
 #### Quick start instructions for beginning users of Github
 
-Click on image immediately below to watch 1 minute video or read on.
+Click on the image immediately below to watch 1-minute video or read on.
 
 [![ScreenShot](http://i3.ytimg.com/vi/GnRtEhGvPBQ/hqdefault.jpg)](https://www.youtube.com/watch?v=XRsAaKq4afs)
 
 
-Copy script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save the file to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is the home directory by entering `pwd` on the command line in PyMOL. Check for presence of roundview.py by entering  `ls *.py` on the command line in PyMOL.
+Copy the script from [this link](https://github.com/MooersLab/EasyPyMOL/blob/master/roundview.py) after clicking on "RAW" in the upper right corner and paste it into a plain text file (NOT a doc, docx, or rtf file). Name the script [`roundview.py`](./roundview.py). Save the file to your home directory (e.g., /Users/username or /home/username or C:\Users\username). Start PyMOL. Check that PyMOL's current directory is the home directory by entering `pwd` on the command line in PyMOL. Check for the presence of roundview.py by entering  `ls *.py` on the command line in PyMOL.
 
-Note that the scripts were developed on a Mac and most have utf-8 encoding instead of ascii encoding as expected on Windows. A second set of script files were opened in Sublime Text and saved with Western encoding for Windows and with the filename modified with Windows appended.
+Note that the scripts were developed on a Mac, and most have UTF-8 encoding instead of ASCII encoding, as expected on Windows. A second set of script files was opened in Sublime Text and saved with Western encoding for Windows, with the filename modified with Windows appended.
 The line below in the scripts for Mac and Linux instructs the Python interpreter to read the file with utf-8 encoding.
   #-*- coding: utf-8 -*-
 
@@ -478,7 +482,7 @@ Reference, License, Copyright, and Date of last update
 * Mooers, B. H. (2016). Simplifying and enhancing the use of PyMOL with horizontal scripts. *Protein Science*, 25(10), 1873-1882.
 * GNU General Public License ([GPL-3](http://www.gnu.org/licenses/gpl-3.0.en.html))
 * (C) [Blaine Mooers](https://basicsciences.ouhsc.edu/bmb/Faculty/bio_details/mooers-blaine-hm-phd), Ph.D.,  [University of Oklahoma Health Sciences Center](http://www.ouhsc.edu/), 2015-2017
-* This work was supported by NIH grants RO1 AI088011 (PI: Mooers) from the National Institute of Allergy and Infectious Diseases and ROP20 GM103640 (PI: Ann West), a Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health.  
+* This work was supported by NIH grants RO1 AI088011 (PI: Mooers) from the National Institute of Allergy and Infectious Diseases and ROP20 GM103640 (PI: Ann West), an Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health.  
 * Updated 25 September 2022
 
 
@@ -510,3 +514,10 @@ Related Repos
 - [colabOpenSourcePyMOLpySnips](https://github.com/MooersLab/colabOpenSourcePyMOLpySnips)
 - [colabPyMOLpySnips](https://github.com/MooersLab/colabPyMOLpySnips)
 - [PyMOLwallhangings](https://github.com/MooersLab/PyMOLwallhangings)
+
+## Update history
+
+|Version      | Changes                                                                                                                                                                         | Date                 |
+|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+| Version 0.2 |   Added badges, funding, and update table.                                                                                                                  | 2024 May 24         |
+
